@@ -1,0 +1,4 @@
+將違約門檻定義為外生的固定常數，可視為對於債權人的保護條款(Black and Cox (1976) and Longstaff and Schwartz (1995))；股東試圖決定一個違約門檻使得公司價值最大，所以違約門檻也可以為內生固定常數(cf. Leland 1994 and Leland and Toft 1996.)。
+  結構式模型在文獻上有考慮常數利率(Black and Cox 1976, Geske 1977, Leland 1994 and Leland and Toft 1996)，以及隨機(stochastic processes)利率部分(Ronn and Verma 1986, Kim, Ramaswamy and Sundaresan 1993,Nielsen et al. 1993, Longstaff and Schwartz 1995, Briys and de Varenne 1997 andHsu, Saa-Requejo and Santa-Clara 2004)。
+  以下定義的數學符號，皆假設在無套利的市場下，以風險中立機率測度計算。採用某個短利模型表示無風險利率(default-free)  。
+

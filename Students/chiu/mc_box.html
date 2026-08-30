@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created by Wolfram Mathematica 8.0 : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  mc_box
+ </title>
+ <link href="HTMLFiles/mc_box.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Section">
+ Modified Box-Muller Algorithm
+</p>
+
+
+
+<p class="Subsection">
+ The Idea
+</p>
+
+
+
+<p class="Text">
+ 11/25/2010
+</p>
+
+
+
+<p class="Text">
+ In the Box-Muller algorithm, two uniform random variables are first generated to obtain two iid standard normal random variables. <br />The two uniform variables should satisfy some specific condition,<br />or otherwise they will be thrown away and another two uniform variables are generated. <br />When every two uniform variables are generated, they have <span><span>1-&pi;/4=21.46%</span></span> chance of being thrown away. <br />Here some of the uniform variables that are thrown away are kept and used to generate normal random variables, <br />in order to make the Box-Muller Algorithm more efficient. 
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/mc_box_1.gif" alt="mc_box_1.gif" width="403" height="289" style="vertical-align:middle" />
+</p>
+
+<p class="Graphics">
+ <img src="HTMLFiles/mc_box_2.gif" alt="mc_box_2.gif" width="300" height="300" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/mc_box_3.gif" alt="mc_box_3.gif" width="521" height="176" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/mc_box_4.gif" alt="mc_box_4.gif" width="49" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/mc_box_5.gif" alt="mc_box_5.gif" width="49" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/mc_box_6.gif" alt="mc_box_6.gif" width="466" height="168" style="vertical-align:middle" />
+</p>
+
+<p class="Graphics">
+ <img src="HTMLFiles/mc_box_7.gif" alt="mc_box_7.gif" width="300" height="173" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/mc_box_8.gif" alt="mc_box_8.gif" width="465" height="190" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/mc_box_9.gif" alt="mc_box_9.gif" width="49" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/mc_box_10.gif" alt="mc_box_10.gif" width="312" height="90" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/mc_box_11.gif" alt="mc_box_11.gif" width="49" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Normal Random Variable Generator
+</p>
+
+
+
+<p class="Text">
+ 11/29/2010<br /><br />Based on the above idea
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/mc_box_12.gif" alt="mc_box_12.gif" width="563" height="392" style="vertical-align:middle" />
+</p>
+
+<p class="Graphics">
+ <img src="HTMLFiles/mc_box_13.gif" alt="mc_box_13.gif" width="265" height="270" style="vertical-align:middle" />
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/products/mathematica/" style="color:#000; text-decoration:none;">
+  <img src="HTMLFiles/spikeyIcon.png" alt="Spikey" width="20" height="21" style="padding-right:2px; border:0px solid white; vertical-align:middle;" />
+  <span style="color:#555555">Created with</span> Wolfram <span style="font-style: italic;">Mathematica</span> 8.0
+ </a>
+</div>
+</body>
+
+</html>

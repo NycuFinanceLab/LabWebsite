@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created by Wolfram Mathematica 8.0 : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  Untitled
+ </title>
+ <link href="HTMLFiles/other_ncdf.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Section">
+ Ncdf
+</p>
+
+
+
+<p class="Subsection">
+ Different Ways To Evaluate <span><span>N(x)</span></span> in <span style='font-style: italic;'>Mathematica</span> 
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/other_ncdf_1.gif" alt="other_ncdf_1.gif" width="491" height="571" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/other_ncdf_2.gif" alt="other_ncdf_2.gif" width="56" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/other_ncdf_3.gif" alt="other_ncdf_3.gif" width="56" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/other_ncdf_4.gif" alt="other_ncdf_4.gif" width="56" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/other_ncdf_5.gif" alt="other_ncdf_5.gif" width="56" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Notes on Error &amp; Efficiency
+</p>
+
+
+
+<p class="Text">
+ Using built-in function, one can obtain almost exact values. <br />In constrast, the widely used approximation could introduce an errof of <span><span><img src="HTMLFiles/other_ncdf_6.gif" alt="other_ncdf_6.gif" width="24" height="17" style="vertical-align:middle" /></span></span>, as shown in the figure. <br />But, as experiments show us, using built-in functions to evaluate <span><span>N(x)</span></span> is very inefficient. <br />If an algorithm involves <span><span>N(x)</span></span> frequently, and if one can withstand an error of <span><span><img src="HTMLFiles/other_ncdf_7.gif" alt="other_ncdf_7.gif" width="24" height="17" style="vertical-align:middle" /></span></span>, the widely used approximation is a better choice. 
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/other_ncdf_8.gif" alt="other_ncdf_8.gif" width="491" height="390" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/other_ncdf_9.gif" alt="other_ncdf_9.gif" width="360" height="223" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ More Efficiently
+</p>
+
+
+
+<p class="Text">
+ Recently I designed an algorithm that evaluates <span><span>N(x)</span></span> really frequently. <br />In this case, both of the above are not the best choice. <br />If one can withstand an error of <span><span><img src="HTMLFiles/other_ncdf_10.gif" alt="other_ncdf_10.gif" width="24" height="17" style="vertical-align:middle" /></span></span>, keeping 1201 exact values of <span><span>N(x)</span></span> between [-6, 6] and using qudratic interpolation will work more efficiently. <br />When <span><em>x</em></span> is out of the interval [-6, 6], we set <span><span>N(x)</span></span> to 0 or 1. <br />The error caused in this part this is, as shown in the following computations, always less than <span><span><img src="HTMLFiles/other_ncdf_11.gif" alt="other_ncdf_11.gif" width="24" height="17" style="vertical-align:middle" /></span></span>. <br /><br />Besides, althought the error due to qudratic interpolations depends on the derivative of <span><span>N(x)</span></span>, as shown in the figure, its absolute value is quite small. 
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/other_ncdf_12.gif" alt="other_ncdf_12.gif" width="206" height="214" style="vertical-align:middle" />
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/other_ncdf_13.gif" alt="other_ncdf_13.gif" width="757" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/other_ncdf_14.gif" alt="other_ncdf_14.gif" width="109" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/other_ncdf_15.gif" alt="other_ncdf_15.gif" width="757" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/other_ncdf_16.gif" alt="other_ncdf_16.gif" width="101" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/other_ncdf_17.gif" alt="other_ncdf_17.gif" width="360" height="223" style="vertical-align:middle" />
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/products/mathematica/" style="color:#000; text-decoration:none;">
+  <img src="HTMLFiles/spikeyIcon.png" alt="Spikey" width="20" height="21" style="padding-right:2px; border:0px solid white; vertical-align:middle;" />
+  <span style="color:#555555">Created with</span> Wolfram <span style="font-style: italic;">Mathematica</span> 8.0
+ </a>
+</div>
+</body>
+
+</html>

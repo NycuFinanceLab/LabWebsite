@@ -1,0 +1,52 @@
+n:100
+
+FPM:
+
+Credit Speard:0.010255
+Credit Speard:0.025431
+Credit Speard:0.030493
+Credit Speard:0.031454
+Credit Speard:0.030950
+Credit Speard:0.029980
+Credit Speard:0.028915
+Credit Speard:0.027916
+Credit Speard:0.027035
+Credit Speard:0.026270
+
+Merton:
+Credit Speard:0.010255
+Credit Speard:0.025431
+Credit Speard:0.030493
+Credit Speard:0.031454
+Credit Speard:0.030950
+Credit Speard:0.029980
+Credit Speard:0.028915
+Credit Speard:0.027916
+Credit Speard:0.027035
+Credit Speard:0.026270
+
+
+n:100
+0.005678
+0.013225
+0.020126
+0.022701
+0.020749
+0.024232
+0.023416
+0.023092
+0.026778
+0.026797
+
+FPM
+0.008284
+0.019196
+0.028107
+0.030199
+0.027274
+0.029312
+0.027984
+0.027245
+0.027320
+0.027144
+

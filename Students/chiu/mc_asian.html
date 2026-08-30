@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created by Wolfram Mathematica 8.0 : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  mc_asian
+ </title>
+ <link href="HTMLFiles/mc_asian.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Section">
+ Monte Carlo Asian Option Pricing
+</p>
+
+
+
+<p class="Text">
+ With control variates method, the sample variance is reduced significantly, and hence the prcing result is better. <br />Note that the exact value under this numerical setting this 2.3682854518288..., which is obtained by convolution pricing. <br />It does take more time to evaluate the geometric mean of sample prices, but it&rsquo;s worthy. 
+</p>
+
+
+
+<p class="Subsection">
+ Without Control Variates method
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/mc_asian_1.gif" alt="mc_asian_1.gif" width="429" height="654" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/mc_asian_2.gif" alt="mc_asian_2.gif" width="49" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/mc_asian_3.gif" alt="mc_asian_3.gif" width="42" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/mc_asian_4.gif" alt="mc_asian_4.gif" width="35" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/mc_asian_5.gif" alt="mc_asian_5.gif" width="360" height="230" style="vertical-align:middle;" usemap="#map_5" />
+<map name="map_5">
+<area shape="rect" coords="346,214,352,211" title="1." nohref  />
+<area shape="rect" coords="326,214,332,211" title="1." nohref  />
+<area shape="rect" coords="316,214,322,208" title="2." nohref  />
+<area shape="rect" coords="292,214,298,211" title="1." nohref  />
+<area shape="rect" coords="267,214,273,208" title="2." nohref  />
+<area shape="rect" coords="262,214,268,202" title="4." nohref  />
+<area shape="rect" coords="252,214,258,205" title="3." nohref  />
+<area shape="rect" coords="237,214,243,205" title="3." nohref  />
+<area shape="rect" coords="232,214,238,211" title="1." nohref  />
+<area shape="rect" coords="227,214,233,208" title="2." nohref  />
+<area shape="rect" coords="222,214,228,205" title="3." nohref  />
+<area shape="rect" coords="217,214,223,211" title="1." nohref  />
+<area shape="rect" coords="212,214,218,208" title="2." nohref  />
+<area shape="rect" coords="207,214,213,205" title="3." nohref  />
+<area shape="rect" coords="202,214,208,208" title="2." nohref  />
+<area shape="rect" coords="197,214,203,205" title="3." nohref  />
+<area shape="rect" coords="192,214,198,208" title="2." nohref  />
+<area shape="rect" coords="187,214,193,202" title="4." nohref  />
+<area shape="rect" coords="182,214,188,199" title="5." nohref  />
+<area shape="rect" coords="177,214,183,205" title="3." nohref  />
+<area shape="rect" coords="172,214,178,193" title="7." nohref  />
+<area shape="rect" coords="167,214,173,193" title="7." nohref  />
+<area shape="rect" coords="162,214,168,193" title="7." nohref  />
+<area shape="rect" coords="157,214,163,190" title="8." nohref  />
+<area shape="rect" coords="152,214,158,173" title="14." nohref  />
+<area shape="rect" coords="147,214,153,185" title="10." nohref  />
+<area shape="rect" coords="142,214,148,190" title="8." nohref  />
+<area shape="rect" coords="137,214,143,173" title="14." nohref  />
+<area shape="rect" coords="132,214,138,170" title="15." nohref  />
+<area shape="rect" coords="127,214,133,190" title="8." nohref  />
+<area shape="rect" coords="122,214,128,173" title="14." nohref  />
+<area shape="rect" coords="117,214,123,185" title="10." nohref  />
+<area shape="rect" coords="112,214,118,185" title="10." nohref  />
+<area shape="rect" coords="107,214,113,165" title="17." nohref  />
+<area shape="rect" coords="102,214,108,168" title="16." nohref  />
+<area shape="rect" coords="97,214,103,153" title="21." nohref  />
+<area shape="rect" coords="92,214,98,136" title="27." nohref  />
+<area shape="rect" coords="87,214,93,125" title="31." nohref  />
+<area shape="rect" coords="82,214,88,139" title="26." nohref  />
+<area shape="rect" coords="77,214,83,87" title="44." nohref  />
+<area shape="rect" coords="72,214,78,107" title="37." nohref  />
+<area shape="rect" coords="67,214,73,113" title="35." nohref  />
+<area shape="rect" coords="62,214,68,119" title="33." nohref  />
+<area shape="rect" coords="57,214,63,87" title="44." nohref  />
+<area shape="rect" coords="52,214,58,82" title="46." nohref  />
+<area shape="rect" coords="47,214,53,41" title="60." nohref  />
+<area shape="rect" coords="42,214,48,70" title="50." nohref  />
+<area shape="rect" coords="37,214,43,84" title="45." nohref  />
+<area shape="rect" coords="32,214,38,53" title="56." nohref  />
+<area shape="rect" coords="27,214,33,27" title="65." nohref  />
+<area shape="rect" coords="22,214,28,47" title="58." nohref  />
+<area shape="rect" coords="17,214,23,21" title="67." nohref  />
+<area shape="rect" coords="12,214,18,27" title="65." nohref  />
+</map>
+</p>
+
+<p class="Subsection">
+ With Control Variates&nbsp;&nbsp;method
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/mc_asian_6.gif" alt="mc_asian_6.gif" width="1109" height="802" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/mc_asian_7.gif" alt="mc_asian_7.gif" width="49" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/mc_asian_8.gif" alt="mc_asian_8.gif" width="56" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/mc_asian_9.gif" alt="mc_asian_9.gif" width="35" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/mc_asian_10.gif" alt="mc_asian_10.gif" width="360" height="224" style="vertical-align:middle;" usemap="#map_10" />
+<map name="map_10">
+<area shape="rect" coords="324,208,353,207" title="1." nohref  />
+<area shape="rect" coords="269,208,298,207" title="1." nohref  />
+<area shape="rect" coords="242,208,270,207" title="1." nohref  />
+<area shape="rect" coords="214,208,243,207" title="1." nohref  />
+<area shape="rect" coords="187,208,215,207" title="5." nohref  />
+<area shape="rect" coords="160,208,188,206" title="17." nohref  />
+<area shape="rect" coords="132,208,161,206" title="23." nohref  />
+<area shape="rect" coords="105,208,133,204" title="66." nohref  />
+<area shape="rect" coords="77,208,106,201" title="136." nohref  />
+<area shape="rect" coords="50,208,78,193" title="339." nohref  />
+<area shape="rect" coords="22,208,51,21" title="4410." nohref  />
+</map>
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/products/mathematica/" style="color:#000; text-decoration:none;">
+  <img src="HTMLFiles/spikeyIcon.png" alt="Spikey" width="20" height="21" style="padding-right:2px; border:0px solid white; vertical-align:middle;" />
+  <span style="color:#555555">Created with</span> Wolfram <span style="font-style: italic;">Mathematica</span> 8.0
+ </a>
+</div>
+</body>
+
+</html>

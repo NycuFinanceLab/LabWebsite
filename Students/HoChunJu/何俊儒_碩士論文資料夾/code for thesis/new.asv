@@ -1,0 +1,106 @@
+clc
+clear all
+
+format long 
+clear f
+
+Tn = 10;                       %期數 ie. 0,1,2,3
+ni = 25;               %75
+N  =  0;                        %N0=0                
+sigma = 0.1;                  %先假設每期sigma不變
+delta = 1;
+K = 0.05;                     %caplet的履約價格
+A = 1;
+bondK = 1/1.05;               %零息債券選擇權履約價格
+f0 = [0.05 ; 0.05 ; 0.05  ; 0.05  ; 0.05  ; 0.05  ; 0.05  ; 0.05  ; 0.05  ; 0.05  ; 0.05  ];   %f(i,Ti)  [f00 ; f01 ; f02....]
+
+for sigma = 0.10:0.30
+ for k=Tn:-1:1
+    N = 0;
+    f(1,1,k) = f0(k+1);
+    for i=1:k
+        N = N+ni;
+        d = 2/(1+exp(2*sigma*((delta)/ni)^0.5));
+        u = 2-d;
+        for j=1:N+1
+            f(j,i+1,k) = f0(k+1)*u^(N-j+1)*d^(j-1);
+        end  
+    end
+ end
+ 
+f;
+
+% N = 0;
+% d = 2/(1+exp(2*sigma*((delta)/ni)^0.5));
+% u = 2-d;                                     %因為假設關係  每期u.d為相同
+% pathq(1:1+ni*Tn,Tn+1) = 0;
+pathq(1,1) = 1;
+q = 0.5;
+
+for i=1:Tn
+    for j=1:(ni*i+1)
+        pathq(j,i+1) = nchoosek(ni*i,j-1)*q^(ni*i-j+1)*(1-q)^(j-1);
+    end
+end
+
+pathq;
+
+sum(pathq);
+
+%理論零息債券價格
+p(1,1) = 1/(1+f0(1));
+for i=2:Tn+1
+    p(i,1) = p(i-1,1)/(1+f0(i));
+end
+
+p;
+
+%caplet
+% for i=1:Tn
+%     tempory = f(:,i+1,i);
+%     tempory(find(tempory==0)) = [];
+%     
+%     tempory1 = pathq(:,i+1);
+%     tempory1(find(tempory1==0)) = [];
+% 
+%     caplet(i,1) = A*delta*sum(max(tempory-K,0).*tempory1)*p(i+1,1);
+% end
+% 
+% caplet;
+% 
+% %Black's formula
+% for i=1:Tn
+%         nd1 = normcdf(0.5*sigma*(i^0.5),0,1);
+%         tempory3 = 1;
+%         for j=1:i+1
+%             tempory3 = tempory3*(1+f0(j));
+%         end
+%         black(i,1) = 0.05*(2*nd1-1)/tempory3;  
+% end
+% 
+% black;
+%     
+% difference = caplet - black;
+% 
+% %relative difference
+% rd = (abs(difference) ./ black) * 100;
+% 
+% sum_D = sum(difference.^2);
+% 
+% %RMSE
+% rmse = sqrt(sum_D / Tn)
+
+% embedded bond option
+i = 2;
+tempory = f(:,i+1,i);
+tempory(find(tempory==0)) = [];
+tempory1 = pathq(:,i+1);
+tempory1(find(tempory1==0)) = [];
+
+b_p(count,1) = sum(max((1./(1+tempory))-bondK,0).*tempory1)*p(i,1)
+ end
+
+
+
+
+

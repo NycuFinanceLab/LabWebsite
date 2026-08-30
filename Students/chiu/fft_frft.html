@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created by Wolfram Mathematica 8.0 : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  fft_frft
+ </title>
+ <link href="HTMLFiles/fft_frft.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Section">
+ FRFT
+</p>
+
+
+
+<p class="Text">
+ The discrete Fourier transform evaluate <span class="InlineFormulaInline"><span><img src="HTMLFiles/fft_frft_1.gif" alt="fft_frft_1.gif" width="124" height="19" style="vertical-align:middle" /></span></span>. <br />In some cases we need the fractional Fourier transform (FrFT) <span class="InlineFormulaInline"><span><img src="HTMLFiles/fft_frft_2.gif" alt="fft_frft_2.gif" width="121" height="19" style="vertical-align:middle" /></span></span>. <br />This can also be done in <span><span>O(n log n)</span></span> computations. <br />The following algorithm is given by David H. Bailey &amp; Paul N. Swarztrauber. <br />Again, the built-in function Fourier[] which can do this. <br />I just write this to serve as a pseudo code so that i can impliment it in C. <br />Note that the inverse FrFT is unnecessary since <span><em>&alpha;</em></span> can be negative.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/fft_frft_3.gif" alt="fft_frft_3.gif" width="646" height="600" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>77.</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>-14.272-1.91872 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>-0.210611+8.33817 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>13.1626 +3.66773 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>-11.5849-60.725 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>15.2433 +13.7436 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>7.01947 -8.43697 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>-6.85686-10.1127 <span class="doublestruck">i</span></span></td>
+ </tr>
+</table>
+
+</td>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>77.</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>-14.272-1.91872 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>-0.210611+8.33817 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>13.1626 +3.66773 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>-11.5849-60.725 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>15.2433 +13.7436 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>7.01947 -8.43697 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>-6.85686-10.1127 <span class="doublestruck">i</span></span></td>
+ </tr>
+</table>
+
+</td>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>77.</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>-14.272-1.91872 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>-0.210611+8.33817 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>13.1626 +3.66773 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>-11.5849-60.725 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>15.2433 +13.7436 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>7.01947 -8.43697 <span class="doublestruck">i</span></span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>-6.85686-10.1127 <span class="doublestruck">i</span></span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+<p class="Output">
+ <img src="HTMLFiles/fft_frft_4.gif" alt="fft_frft_4.gif" width="147" height="15" style="vertical-align:middle" />
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/products/mathematica/" style="color:#000; text-decoration:none;">
+  <img src="HTMLFiles/spikeyIcon.png" alt="Spikey" width="20" height="21" style="padding-right:2px; border:0px solid white; vertical-align:middle;" />
+  <span style="color:#555555">Created with</span> Wolfram <span style="font-style: italic;">Mathematica</span> 8.0
+ </a>
+</div>
+</body>
+
+</html>
