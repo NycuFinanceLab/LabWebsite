@@ -1,0 +1,7 @@
+Backup*.tar.gz
+*.tmp
+*.log
+.DS_Store
+node_modules/
+dist/
+.vite/

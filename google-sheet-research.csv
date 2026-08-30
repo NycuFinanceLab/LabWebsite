@@ -1,0 +1,9 @@
+visible,title,url,strong,prefix,suffix,target,category,sort,note
+true,Published Works,works.html,true,,,,Publication list,1,Journal and conference publications.
+true,期貨與選擇權學刊,https://www.taifex.com.tw/cht/10/members,false,,,,Editorial,3,編輯委員
+true,Financial Mathematics and Statistics,FinMathStatConf/,false,,,,Seminar,6,Conference and seminar materials.
+true,Stochastic Calculus for Finance,FinMath.htm,false,,,,Seminar,7,Course and reading materials.
+true,Pairs Trading Quantitative Methods,PairsTrading.htm,false,,,,Seminar,8,Methods and analysis course page.
+true,企業金融的12堂課,EnterpriseFinance12Lesson/,false,,,,Seminar,9,Enterprise finance materials.
+true,Matlab for Finance,MatlabForFinance/,false,,,,Seminar,10,Financial computing resources.
+true,Interest Rate Models,Interest_Rate_Models_An_Introductio/,false,,,,Seminar,11,Introduction materials.

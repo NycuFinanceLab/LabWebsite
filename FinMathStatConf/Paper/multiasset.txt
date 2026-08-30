@@ -1,0 +1,9 @@
+In this talk we review the concepts of comonotonicity and
+antimonotonicity between random variables in the sense of copula. We
+then apply the ideas to solving the optimization problem of the
+arbitrage bounds on multiasset options in the single period setting,
+especially in the case of basket and the generalized spread options.
+Accompanying with the bounds are the corresponding super and sub
+hedging portfolios which are obtained by solving the dual problems.
+These portfolios can be used to introduce a new measure of
+codependence among the constituent underlying assets.

@@ -1,0 +1,15 @@
+order,year,title,authors,venue,award,award_url,notes,visible
+1,,Pricing Path-Dependent Derivatives,,,第十三屆龍騰論文獎經營管理類金質獎,,,TRUE
+2,1999,Efficient Algorithms for Average-Rate Options pricing,,全國計算機會議,最佳論文獎,,,TRUE
+3,2000,Efficient Algorithms for Average-Rate Options pricing,,中華民國電腦學會論文獎,資訊科學類優等獎,,,TRUE
+4,2003,使用多層解析格子樹模型評價亞式選擇權的精確演算法,,富邦金融研究勤工獎,,,,TRUE
+5,2006,"The Trino-binomial Tree Model: A Simple, and Efficient Tree Model","Dai, T.-S.; Y. D. Lyuu; Jerry Shea","Asian FA/FMA 2006 Meeting, Auckland, New Zealand",Winner of the University of Rhode Island best paper awards,HonorProof/AFA06.doc,Jul. 2006,TRUE
+6,,95學年度績優導師,,,,,,TRUE
+7,2012,"A Multi-Phase, Flexible, and Accurate Lattice for Pricing Complex Derivatives with Multiple Market Variables","Dai, T.-S.; C. J. Wang; Y. D. Lyuu","IEEE Conference on Computational Intelligence for Financial Engineering & Economics (CIFEr), New York City",Best paper award,,"March 29-30, 2012",TRUE
+8,,以LMM利率模型評價利率衍生性商品：結合節點二項樹方法,,臺大管理論叢之論文,聯電經營管理論文獎＿優等獎,,,TRUE
+9,,CLOUD ASSET PRICING TREE (CAPT) - ELASTIC ECONOMIC MODEL FOR CLOUD SERVICE PROVIDERS,"Soheil Qanbari; Fei Li; Schahram Dustdar; Tian-Shyr Dai",The 5th International Conference on Cloud Computing and Services Science,BEST STUDENT PAPER AWARD,http://closer.scitevents.org/PreviousAwards.aspx,,TRUE
+10,2015,Evaluating Corporate Bonds and Analyzing Market Participants Behaviors with Complex Debt Structure,"Tian-Shyr Dai; Chuan-Ju Wang; Liang-Chih Liu",2015 FMA Annual Meeting,Best Paper Award in Derivatives,http://www.fma.org/Orlando/BestPaperAnnouncement.pdf,,TRUE
+11,,Evaluating Corporate Bonds and Analyzing Market Participants Behaviors with Complex Debt Structure,戴天時、王釧茹、劉亮志,第十屆證券暨期貨金椽獎,研究發展論文甄選學術組優等獎,https://webline.sfi.org.tw/IActReview/doc/1.pdf,,TRUE
+12,2019,"Non-Financial Firms’ Issuance Strategies of Contingent Capitals, their Pops and Cons, and Solutions to Asset Substitutions",劉亮志、周蕾、戴天時,【2019TFA 研討會】,Best paper award,,,TRUE
+13,2021,Solving Unconverged Learning of Pairs Trading Strategies with Representation Labeling Mechanism,"Wei-Lun Kuo; Tian-Shyr Dai; Wei-Che Chang",MUFin21 workshop at CIKM2021,Best Paper award,https://www.facebook.com/photo/?fbid=10161386499724829&set=a.10150169893009829,,TRUE
+14,2024,"Call Protection, Financial Flexibility, and Debt Maturity Decision",劉亮志、周蕾、戴天時、曾俊凱,【2024TFA 研討會】,Best Paper award,https://www.facebook.com/photo/?fbid=10163507637329829&set=a.10154449692334829,,TRUE

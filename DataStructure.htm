@@ -1,0 +1,1005 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=big5">
+
+  
+
+
+  
+  <title>Data Structure</title>
+  <style type="text/css">
+a { font-weight: bold; }
+  </style>
+</head>
+
+
+<body style="background-color: rgb(192, 255, 240);">
+
+
+<center>
+<h1><font face="Verdana,Arial,Times New I2,Stencil">Data
+Structure</font></h1>
+
+
+</center>
+
+
+<strong>
+</strong>
+<hr>
+<ul>
+
+
+  <strong> <li><font color="#ff0000">Textbook</font>
+    
+    <ul>
+
+
+      <li>Horowitz/ Fundamentals of Data Structure in C++ 2/e </li>
+
+
+    
+    </ul>
+
+
+  </li>
+
+
+  </strong>
+</ul>
+
+
+<hr>
+<ul>
+
+
+  <li><strong>課程目標: </strong>
+    
+    <p><strong>本課程將對計算機科學中常使用到的資料結構做一個完整的介紹。並分析各個ADT的操作與演算法的
+時間與空間複雜度。本課程使用C++程式語言實作。</strong></p>
+
+
+  </li>
+<li><strong>助教: </strong>
+    
+   <ul>
+      <li><a href="mailto:heyguys123.eecs99@g2.nctu.edu.tw"><strong> 賴旭昭  </strong></a>
+       <li><a href="mailto:kevinlee81810@gmail.com"><strong> 李元凱 </strong></a>  
+    </ul>
+
+  </li>
+<li><strong>助教時間: </strong>  TBA
+
+</li>
+  <li><strong>課程綱要: </strong>
+    
+    <p><strong></strong>
+    
+    <table border="1">
+
+
+      <tbody>
+
+
+        <tr>
+
+
+          <th>Lecture</th>
+
+
+          <th>Content</th>
+
+
+          <th>Reading</th>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>1 </td>
+
+
+          <td><a href="DataStructure/lec01.pdf">Introduction, Review of C++,
+            Sorting</a> </td>
+
+
+          <td>Section 7.2</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>2</td>
+
+
+          <td><a href="DataStructure/lec02.pdf">Algorithmic
+Complexity (Insertion Sort)</a></td>
+
+
+          <td>Section 1.7.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>3</td>
+
+
+          <td><a href="DataStructure/lec03.pdf">Experimental
+Performance Measurement.</a></td>
+
+
+          <td>Section 1.7.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>4</td>
+
+
+          <td><a href="DataStructure/lec04.pdf">Abstract
+Data Types.</a></td>
+
+
+          <td>Sections 1.3 and 2.1.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>5</td>
+
+
+          <td><a href="DataStructure/lec05.pdf">Sparse
+Matrices.</a></td>
+
+
+          <td>Section 2.4. </td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>6</td>
+
+
+          <td><a href="DataStructure/lec06.pdf">Arrays.</a></td>
+
+
+          <td>Section 2.5.</td>
+
+
+        </tr>
+       <tr valign="top">
+
+
+          <td>6.5 </td>
+
+
+          <td><a href="DataStructure/lec06_5.pdf">Templates in C++</a> </td>
+
+
+          <td>Section   </td>
+
+
+        </tr>
+
+
+
+        <tr valign="top">
+
+
+          <td>7</td>
+
+
+          <td><a href="DataStructure/lec07.pdf">Stacks.</a></td>
+
+
+          <td>Section 3.6.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>8</td>
+
+
+          <td><a href="DataStructure/lec08.pdf">Stacks.</a></td>
+
+
+          <td>Section 3.2.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>9</td>
+
+
+          <td><a href="DataStructure/lec09.pdf">Queues.</a></td>
+
+
+          <td>Section 3.3.</td>
+
+
+        </tr>
+
+
+        <tr>
+
+          <td>9.5</td>
+
+          <td><a href="DataStructure/lec09_5.pdf">Evaluation of Expressions</a></td>
+
+          <td>Section 3.6.</td>
+
+        </tr>
+
+        <tr valign="top">
+
+
+          <td>10</td>
+
+
+          <td><a href="DataStructure/lec10.pdf">Linked Lists.</a> </td>
+
+
+          <td>Sections 4.1 and 4.2.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>11</td>
+
+
+          <td><a href="DataStructure/lec11.pdf">The Template Class Chain.</a></td>
+
+
+          <td>Section 4.3.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>12</td>
+
+
+          <td><a href="DataStructure/lec12.pdf">Iterators and Chain Variants.</a></td>
+
+
+          <td>Sections 4.3, 4.4, 4.10.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>13</td>
+
+
+          <td><a href="DataStructure/lec13.pdf">Trees.</a></td>
+
+
+          <td>Section 5.1.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>14</td>
+
+
+          <td><a href="DataStructure/lec14.pdf">Binary Trees.</a></td>
+
+
+          <td>Section 5.2.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>15</td>
+
+
+          <td><a href="DataStructure/lec15.pdf">Binary Tree Traversals.</a></td>
+
+
+          <td>Section 5.3.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>16</td>
+
+
+          <td><a href="DataStructure/lec16.pdf">Priority Queues.</a></td>
+
+
+          <td>Sections 5.6 and 7.6.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>17</td>
+
+
+          <td><a href="DataStructure/lec17.pdf">Max Heaps and Leftist Trees</a></td>
+
+
+          <td>Sections 5.6 and 9.2.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>18</td>
+
+
+          <td><a href="DataStructure/lec18.pdf">Binary Search Trees.</a></td>
+
+
+          <td>Section 5.7.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>19</td>
+
+
+          <td><a href="DataStructure/lec19.pdf">Selection Trees.</a></td>
+
+
+          <td>Section 5.8.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>20</td>
+
+
+          <td><a href="DataStructure/lec20.pdf">Disjoint Sets</a></td>
+
+
+          <td>Section 5.10.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>21</td>
+
+
+          <td><a href="DataStructure/lec21.pdf">Graphs.</a></td>
+
+
+          <td>Section 6.1.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>22</td>
+
+
+          <td><a href="DataStructure/lec22.pdf">Graph Search Methods.</a></td>
+
+
+          <td>Section 6.2.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>23</td>
+
+
+          <td><a href="DataStructure/lec23.pdf">Min Cost Spanning Trees.</a></td>
+
+
+          <td>Section 6.3.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>24</td>
+
+
+          <td><a href="DataStructure/24.pdf">Shortest Path Problems (Dijkstra).</a></td>
+
+
+          <td>Section 6.4.1.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>25</td>
+
+
+          <td><a href="DataStructure/25.pdf">Shortest Paths (Bellman Ford).</a></td>
+
+
+          <td>Section 6.4.2.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>26</td>
+
+
+          <td>All Pairs Shortest Paths.</td>
+
+
+          <td>Section 6.4.3</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>27</td>
+
+
+          <td>Sorting.</td>
+
+
+          <td>Sections 7.3 and 7.5</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>28</td>
+
+
+          <td>External Sorting.</td>
+
+
+          <td>Section 7.10.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>29</td>
+
+
+          <td>External Sorting.</td>
+
+
+          <td>Section 7.10.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>30</td>
+
+
+          <td>External Sorting.</td>
+
+
+          <td>Section 7.10.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>31</td>
+
+
+          <td>External Sorting (Run Merging, Huffman Codes).</td>
+
+
+          <td>Section 7.10.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>32</td>
+
+
+          <td>Hash Tables.</td>
+
+
+          <td>Sections 8.2.1 and 8.2.2.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>33</td>
+
+
+          <td>Hash Tables.</td>
+
+
+          <td>Sections 8.2.4 and 8.2.5</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>34</td>
+
+
+          <td>Bloom Filters.</td>
+
+
+          <td>Section 8.4</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>35</td>
+
+
+          <td>Amortized Complexity.</td>
+
+
+          <td>Section 9.3.1.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>36</td>
+
+
+          <td>Binomial Heaps.</td>
+
+
+          <td>Section 9.3.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>37</td>
+
+
+          <td>Binomial Heaps (analysis).</td>
+
+
+          <td>Section 9.3.6.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>38</td>
+
+
+          <td>Fibonacci Heaps.</td>
+
+
+          <td>Section 9.4.</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>39</td>
+
+
+          <td>Fibonacci Heaps (analysis) .</td>
+
+
+          <td>iSection 9.4.5</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>40</td>
+
+
+          <td>Pairing Heaps.</td>
+
+
+          <td>Section 9.5</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>41</td>
+
+
+          <td>Interval Heaps.</td>
+
+
+          <td>Section 9.7</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>42</td>
+
+
+          <td>Static Dictionaries.</td>
+
+
+          <td>Section 10.1</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>43</td>
+
+
+          <td>Dynamic Dictionaries (AVL Trees).</td>
+
+
+          <td>Section 10.2</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>44</td>
+
+
+          <td>Red Black Trees.</td>
+
+
+          <td>Section 10.3</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>45</td>
+
+
+          <td>Red Black Trees.</td>
+
+
+          <td>Section 10.3</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>46</td>
+
+
+          <td>Splay Trees.</td>
+
+
+          <td>Section 10.4</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>47</td>
+
+
+          <td>Splay Trees (analysis).</td>
+
+
+          <td>Section 10.4</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>48</td>
+
+
+          <td>B Trees.</td>
+
+
+          <td>Section 11.2</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>49</td>
+
+
+          <td>B Trees (continued).</td>
+
+
+          <td>Section 11.2</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>50</td>
+
+
+          <td>B+ Trees.</td>
+
+
+          <td>Section 11.3</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>51</td>
+
+
+          <td>Digital Search Trees and Binary Tries.</td>
+
+
+          <td>Section 12.1</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>52</td>
+
+
+          <td>Binary Tries and Compressed Binary Tries .</td>
+
+
+          <td>Section 12.2</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>53</td>
+
+
+          <td>Patricia.</td>
+
+
+          <td>Section 12.2.3</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>54</td>
+
+
+          <td>Higher Order Tries.</td>
+
+
+          <td>Section 12.3</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>55</td>
+
+
+          <td>Router/Classifier/Firewall Tables.</td>
+
+
+          <td>Section 12.5</td>
+
+
+        </tr>
+
+
+        <tr valign="top">
+
+
+          <td>56</td>
+
+
+          <td>Suffix Trees.</td>
+
+
+          <td>Section 12.4</td>
+
+
+        </tr>
+
+
+      
+      </tbody>
+    
+    </table>
+    </p>
+  </li>
+ 
+<li>  補充: 
+  <ul> 
+   <li>           <a href="DataStructure/ch6.pdf">網際網路簡介</a>
+   <li>         <a href="DataStructure/R_int_18.doc">大學校園網站法律案例教材</a>
+  </ul>
+
+</ul>
+
+
+<hr>
+<a href="main.htm"><img src="images/ChicagoHotel1.jpg" align="right" border="0" hspace="6" width="100">
+</a>
+<p align="right">
+<script>
+document.write("<font size=-2>Updated " +document.lastModified+ "</font>")
+</script></p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5547275-1");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

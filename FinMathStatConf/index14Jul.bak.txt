@@ -1,0 +1,1012 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=big5">
+
+  
+
+
+  
+  <title>Seminars on Financial Mathematics and Financial Statistics</title>
+  <style type="text/css">
+  body { margin: 0pt;
+    padding: 0px;
+    background: rgb(239, 239, 239) none repeat scroll 0% 50%;
+    -moz-background-clip: initial;
+    -moz-background-origin: initial;
+    -moz-background-inline-policy: initial;
+    font-family: Verdana,Arial;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size-adjust: none;
+    font-stretch: normal;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-size: small;
+    }
+
+  #header { border: 1px solid rgb(51, 102, 153);
+    margin: 0pt auto;
+    padding: 0pt;
+    height: 120px;
+    background-color: rgb(51, 102, 153);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Verdana,Arial,Times New I2,Stencil;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 210%;
+    line-height: normal;
+    font-size-adjust: none;
+    font-stretch: normal;
+    }
+
+  #content-wrapper { border-style: none solid solid;
+    border-color: rgb(204, 204, 204);
+    border-width: 0pt 1px 1px;
+    margin: 0pt auto;
+    padding: 15px;
+    width: 90%;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    }
+
+  a { font-weight: bold;
+    font-style: italic;
+    }
+
+
+  </style>
+</head>
+
+
+<body>
+
+
+<center>
+<table cellpadding="15" cellspacing="0" width="900">
+
+
+  <tbody>
+
+
+    <tr>
+
+
+      <td id="header">財務數學與財務統計研討會<br>
+
+
+      <font size="4">Seminars on Financial Mathematics and
+Financial Statistics</font></td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td id="content-wrapper">
+      
+      <h2>主旨</h2>
+
+
+      
+      <table border="0">
+
+
+        <tbody>
+
+
+          <tr>
+
+
+            <td width="20"></td>
+
+
+            <td><b>前言</b></td>
+
+
+          </tr>
+
+
+          <tr>
+
+
+            <td></td>
+
+
+            <td>由於金融市場法規鬆綁以及新的金融產品不斷問世，所衍生的相關問題已非傳統財金領域知識可解決，結合數學、
+資訊以及財務等不同領域等研究方法來探討現代財
+務金融問題已成為一重要的研究方向。僅以Princeton大學在1998年設立的 Bendheim Center for Finance
+為例。這個Center特別強調&ldquo;encourage interdisciplinary research in
+finance, primarily from a quantitative or mathematical
+perspective.&rdquo;建立一個跨領域的計量財務學術研究平台，推廣數學、財務以及相關領域知識的結合，以因應台灣金融市場的變
+遷實為當務之急。 <br>
+
+
+            <br>
+
+
+            </td>
+
+
+          </tr>
+
+
+          <tr>
+
+
+            <td width="20"></td>
+
+
+            <td><b>主旨</b></td>
+
+
+          </tr>
+
+
+          <tr>
+
+
+            <td></td>
+
+
+            <td>本研討會的主旨在於結合財務、數學、與資訊等領域之學者，互相交流其研究方法以及最新研究議題，並專注於財
+務模型建立、資料分析、統計方法、演算法等相關
+研究議題。其應用將涵蓋衍生性金融商品的定價，實質選擇權、信用風險、風險管理、以及最佳資產配置等領域。 <br>
+
+
+            <br>
+
+
+            </td>
+
+
+          </tr>
+
+
+          <tr>
+
+
+            <td width="20"></td>
+
+
+            <td><b>目的</b></td>
+
+
+          </tr>
+
+
+          <tr>
+
+
+            <td></td>
+
+
+            <td>預期達成效果：本研討會提供了對計量財務金融的跨領域研究平台。透過學術演講的方式增進研討會參與者對不同
+研究領域的理解、並增進參與者彼此間之討論互
+動，以致於在實質上達到跨領域之學術合作的目標。 </td>
+
+
+          </tr>
+
+
+        
+        </tbody>
+      
+      </table>
+
+
+      
+      <h2>最新演講時間地點</h2>
+
+
+      
+      <ul>
+            
+    
+     
+
+
+
+
+
+      
+
+     
+
+      </ul>
+      
+      <h2>主持人</h2>
+
+
+      
+      <ul>
+
+        <li> 林士貴 (高雄大學金管系) </li>
+        <li>戴天時 (交通大學資財學系)</li>
+
+
+      
+      </ul>
+
+
+      
+      <h2>協同主持人</h2>
+
+
+      
+      <ul>
+
+
+        <li>傅承德 (中央大學統計所及中央研究院統計研究所)</li>
+
+
+      
+      </ul>
+
+
+      
+      <h2>參與研討會員</h2>
+
+
+      
+      <ul>
+
+
+        <li>傅承德 (中央大學統計所及中央研究院統計科學研究所)</li>
+
+
+        <li>鍾惠民 (交通大學財金所)</li>
+
+
+        <li>龐天曉 (中央大學統計所)</li>
+
+
+        <li>繆維正 (中央大學統計所)</li>
+
+
+        <li>戴天時 (交通大學資財研究所)</li>
+
+
+        <li>邱俊淵 (台灣大學財務金融研究所碩二)</li>
+
+
+        <li>王仁和 (台灣大學財務金融研究所博四) 中央研究院統計科學研究所</li>
+
+
+        <li>白斯宇 (台灣大學財務金融研究所碩一)</li>
+
+
+        <li>顏汝芳 (台灣大學財務金融研究所碩二)</li>
+
+
+        <li>柯子介 (台灣大學財務金融研究所碩一)</li>
+
+
+        <li>陳麗君 (台灣大學財務金融研究所博三)</li>
+
+
+        <li>鄭宏文 (台灣大學財務金融研究所博一)</li>
+
+
+        <li>陳琪龍 (銘傳財金學系)</li>
+
+
+        <li>John Aston (中研究院統計科學研究所)</li>
+
+
+        <li>葉永南 (中研究院數學研究所)</li>
+
+
+        <li>韓傳祥 (清華大學計量財務金融學系)</li>
+
+
+      
+      </ul>
+
+
+      
+      <h2><span style="font-weight: normal;">Past
+Talk</span></h2>
+  <ul>
+ <li><font color="red" face="Times New Roman,Georgia,Times" size="5"> 
+    2009</font></li>
+   <ul>
+      <ul>   
+           <li>曾雲蘭 副教授 （屏東商業技術學院會計系）
+           <li>題目: <i><a href="paper/會計師獨立性與會計保守性－20090403.ppt"> Price and Foreign Investors’ Behavior around the Ex-Day: Evidence from Taiwan’s 1998 tax reform
+            </a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間:1月15日11:00 </li>
+        </ul>   
+ 
+       <ul>   
+           <li>黃瑞卿 副教授 （元智大學財金系）
+           <li>題目: <i><a href="paper/會計師獨立性與會計保守性－20090403.ppt"> Does Mortality Improvement Increase Risk Premiums? A Risk Perception Perspective
+         </a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間:1月15日12:00 </li>
+        </ul>   
+       <ul>   
+           <li>陳一如 助理教授 （元智大學財金系）
+
+           <li>題目: <i><a href="paper/會計師獨立性與會計保守性－20090403.ppt"> Corporate Governance and the Efficiency of Internal Capital Markets
+       </a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間:1月15日14:00 </li>
+        </ul>   
+       <ul>   
+           <li>陳昌志 博士 （中山大學企管系）
+           <li>題目: <i><a href="paper/會計師獨立性與會計保守性－20090403.ppt"> A Capital-Structure-Based Pricing Model for Debt Guarantees
+      </a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間:1月15日15:00 </li>
+        </ul>   
+</ul> 
+  <li><font color="red" face="Times New Roman,Georgia,Times" size="5"> 
+    2008</font></li>
+<ul>
+   <li>  Talk 14 
+         <ul>   
+           <li>Charles Chang (Assistant Professor of Finance, Cornell University)
+           <li>題目: <i><a href="paper/會計師獨立性與會計保守性－20090403.ppt"> Asymptotic Theory for the GARCH(1,1) Quasi-Maximum Likelihood Estimator using stock and option data         
+           </a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 7月10日15:00 </li>
+        </ul>   
+   <li>  Talk 13 
+         <ul>   
+           <li>林豐騰 (台灣大學財務金融系博士)
+           <li>題目: <i><a href="paper/會計師獨立性與會計保守性－20090403.ppt">  Demand for Insurance of Households in the Presence of Background Risk         
+           </a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 7月10日14:00 </li>
+        </ul>   
+   <li>  Talk 12 
+         <ul>   
+           <li>陳宗岡 (台灣大學財務金融系博士)
+           <li>題目: <i><a href="paper/會計師獨立性與會計保守性－20090403.ppt">  Internal Liquidity Risk in Corporate Bond Yield Spreads--Bond- and Market-Level Evidences         
+           </a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 7月10日13:00 </li>
+        </ul>   
+   <li>  Talk 11 
+         <ul>   
+           <li>Charles Chang(Assistant Professor of Finance, Cornell University)
+           <li>題目: <i><a href="paper/會計師獨立性與會計保守性－20090403.ppt">  Asset Pricing in Markov-Switching Jump Diffusion Model: Theory and Empirical Evidence         
+           </a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 7月10日11:00 </li>
+        </ul>   
+    <li>  Talk 10 
+         <ul>   
+           <li>葉宗穎 (台灣大學財務金融系博士後)
+           <li>題目: <i><a href="paper/會計師獨立性與會計保守性－20090403.ppt">  Jumps and volatility risk premiums implied by VIX         
+           </a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 7月10日10:00 </li>
+        </ul>    
+    <li>  Talk 9 
+         <ul>   
+           <li>廖益興  (中原大學會計系副教授)
+           <li>題目: <i><a href="paper/會計師獨立性與會計保守性－20090403.ppt">  An empirical investigation of auditor independence and accounting conservatism: Further evidence from Taiwan market-based incentives          
+           </a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 4月3日上午10:00 </li>
+        </ul>
+       <li>  Talk 8 
+        <ul>   
+           <li>台大  王釧茹 (台大資訊工程系博士候選人)
+           <li>題目: <i><a href="paper/JumpDiffusionLattice_noanimation.pdf">  An Efficient and Accurate Lattice for Pricing Derivatives under a Jump-Diffusion Process           </a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 4月3日上午11:00 </li>
+        </ul>
+       <li>  Talk 7 
+        <ul>   
+           <li>傅瑞彬 (靜宜大學國際貿易系助理教授)
+           <li>題目: <i><a href="paper/信用違約交換選擇權的評價與避險(中研院)980403.pdf"> 信用違約交換選擇權評價與避險
+           </a></i>            
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 4月3日下午13:00 </li>
+        </ul>
+     <li>  Talk 6 
+      <ul>   
+           <li>李世欽 (致理技術學院財務金融系副教授)
+           <li>題目: <i><a href="paper/lotto-Sinica-2009.ppt"> Selection Behavior of Taiwan Lotto Players-Dynamic analyses of number selection
+           </a></i>            
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 4月3日下午14:00 </li>
+        </ul> 
+     <li>  Talk 5
+      <ul>   
+           <li>劉任昌(德明財經科技大學助理教授)
+           <li>題目: <i><a href="paper/應收股利的存續期間2009.ppt"> 應收股利的存續期間：投資人權益遭漠視的另一事證
+           </a></i>            
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 4月3日下午15:00 </li>
+        </ul> 
+
+      <li>  Talk 4
+        <ul>   
+           <li>台大  Hung-Wen Cheng 
+           <li>題目: <i><a href="paper/20090120.pdf">  Efficient estimation using stock and option data under GARCH(1,1) model</a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 1月20日下午14:00 </li>
+        </ul> 
+      <li>  Talk 3
+        <ul>   
+           <li>中正  Prof. Shih-Feng Huang  
+           <li>題目: <i><a href="paper/seminar_sinica.pdf">  Option Pricing and Hedging for Conditional Leptokurtic Returns</a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 1月20日下午13:00 </li>
+        </ul> 
+      <li>  Talk 2
+        <ul>   
+           <li>中原  丁緯教授  
+           <li>題目: <i><a href="paper/Turnover.ppt">  The Relation between Top Management Turnover and the Firms’ Default Risk </a></i>            
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 1月20日上午11:00 </li>
+        </ul> 
+
+
+      <li>  Talk 1
+        <ul>   
+           <li>政大   吳庭彬  
+           <li>題目: <i><a href="paper/abstract.doc">  Analytical Valuation of Barrier Interest Rate Options Under Market Models</a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 12月12日下午2:00 </li>
+        </ul> 
+
+</ul>
+        <li><font color="red" face="Times New Roman,Georgia,Times" size="5">Spring
+2008</font></li>
+<ul> 
+   <li> Talk 7 
+        <ul> 
+           <li>高雄   林士貴教授   
+           <li>題目: <i><a href="paper/abstract_sinica.pdf">  A CLOSED-FORM OPTION VALUATION FORMULA IN REGIME-SWITCHING JUMP DIFFUSION MODELS</a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 8月26日上午10:30 </li>
+        </ul>   
+   <li>  Talk 6
+        <ul>   
+           <li>中興   楊東曉教授
+           <li>題目: <i><a href="paper/Tung-Hsiao_ppt.pdf"> AT-THE-MONEY STOCK OPTIONS, INCENTIVES, AND SHAREHOLDER WEALTH </a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 7月11日下午1:30 </li>
+        </ul> 
+
+
+      <li>  Talk 5
+        <ul>
+           <li>台科大   王之彥教授   
+           <li>題目: <i><a href="paper/Abstract.pdf"> Loss Aversion and the Term Structure of Interest Rates</a> </i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 6月27日下午3:00 </li>
+        </ul> 
+        <li> Talk 4
+         <ul>    
+           <li>    東吳  郭家豪教授   
+           <li>題目: <i><a href="paper/Implementation Problems and Solutions in Stochastic Volatility Models of the Heston Type.ppt"> Implementation Problems and Solutions in Stochastic Volatility Models of the Heston Type</a></i>
+           <li>中央研究院統計科學研究所 308 室</li> 
+           <li>時間: 5月2日下午3:00 </li>
+        </ul> 
+      </ul>
+
+       <li>  Talk 3
+       <ul> 
+           <li>淡江   丁緯   講師   
+           <li>題目: <i><a href="paper/行為財務與會計.ppt">  行為財務與會計</a></i>
+           <li>交通大學管理二館</li>
+           <li>時間: 5月12日下午1:30 </li>
+        </ul> 
+   
+       <li> Talk 2
+       <ul> 
+           <li>元智  詹佳縈教授         
+           <li>題目: <i><a href="paper/ESO ECRY.ppt"> A Study of Employee Stock Option Pricing in Taiwan</a></i>
+           <li>中央研究院統計科學研究所 208 室</li>
+           <li>時間: 4月25日 下午3:00</li>
+        </ul> 
+      
+       <li> Talk 1
+       <ul>
+           <li>中正  王太和 教授   
+           <li>題目: <i><a href="paper/Sinica_March282008.pdf"> Comonotonicity and multiasset option pricing</a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 3月28日 </li>
+        </ul> 
+</ul>
+        <li><font color="red" face="Times New Roman,Georgia,Times" size="5">Fall
+2007</font></li>
+<ul>       
+     
+<li> Talk 7 
+          <ul>     
+           <li>交大  陳安斌教授
+           <li>題目: <i><a href="paper/資訊科技在財務金融的應用20080118.ppt"> 資訊技術在財務決策上的應用</a> </i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 1月18日下午3:00 </li>
+        </ul> 
+<li>Talk 6 
+        <ul>   
+           <li>政大  廖四郎教授
+           <li>題目: <i> <a href="paper/CDO簡報20080111.ppt"> 擔保債權憑證(CDO)之評價與分析</a> </i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 1月11日下午3:00 </li>
+        </ul>     
+
+<li> Talk 5   
+       <ul> 
+         <li>中華票券劉立凡襄理  李志中
+           <li>題目: <i><a href="Paper/票券業風險管理簡報(初稿).ppt"> 
+             <strong>票券業的風險管理實務</strong></a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 12月7日下午3:00 </li>
+         </ul>
+
+    <li>Talk 4 
+          <ul>
+              <li>林俊良(寶來投信風控長)       
+             <li>題目: <i><a href="Paper/投信業之風險管理(中研院數統所講稿第一部份).ppt"> 
+             <strong>投資信託業之風險管理</strong></a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 11月23日下午3:00 </li>
+           </ul>
+
+      <li>  Talk 3 
+       <ul>  
+        <li>寶碩財務股份有限公司總經理  黃建華
+           <li>題目: <i><a href="Paper/交易策略的風險評估與管理961022.ppt"> 
+             <strong>交易策略的風險評估與管理</strong></a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 10月26日下午3:00 </li>
+       </ul>
+      <li>  Talk 2
+        <ul>  
+          <li>寶碩財務股份有限公司資深副總 吳振坤
+           <li>題目: <i><a href="Paper/Gene071019(吳振坤).ppt"> 
+             <strong>智慧型資產配置理論與應用～運用基因工程搜尋技術</strong></a></i>
+           <li>中央研究院統計科學研究所 308 室</li>
+           <li>時間: 10月19日下午3:00 </li>
+         </ul>
+      <li> Talk 1
+        <ul>  
+        <li> 元智大學王衍智教授</li>
+         
+    
+        <li> 題目: <i><a href="Paper/ShareRepurchase.pdf"><strong>Share Repurchases as a Tool to Mislead Investors:
+              Evidence from Earnings Quality and Stock Performance</strong></a><strong></strong></i>
+        </li>
+        <li>中央研究院統計科學研究所 308 室</li>
+
+
+        <li>時間: 10月5日下午3:00 </li>
+         </ul>            
+</ul>    
+
+
+        <li><font color="red" face="Times New Roman,Georgia,Times" size="5">Spring
+2007</font></li>
+
+
+        
+        <ul>
+
+
+          <li><span style="font-weight: bold;">Talk 1</span>：
+            <br>
+
+
+            <span style="font-weight: bold;">Place：</span>3/16
+(五) 下午3:00 <br>
+
+
+            <span style="font-weight: bold;">Time：</span>中
+研院統計所308室 <br>
+
+
+            <span style="font-weight: bold;">Speaker：</span>John
+Aston 教授(中研院統計所) <br>
+
+
+            <span style="font-weight: bold;">Title：</span>Assessing
+Markov Switching Models through the Calculation of
+Exact Distributions for Switching State Features.&nbsp;<br>
+
+
+            <br>
+
+
+          </li>
+
+
+        
+        </ul>
+
+
+        
+        <ul>
+
+
+          <li><span style="font-weight: bold;">Talk
+2: </span><br>
+
+
+            <span style="font-weight: bold;">Place：</span>3/30
+(五) 下午3:00 <br>
+
+
+            <span style="font-weight: bold;">Time：</span>中
+研院統計所308室 <br>
+
+
+            <span style="font-weight: bold;">Speaker：</span>陳
+琪龍 教授(銘傳大學財務金融系) <br>
+
+
+            <span style="font-weight: bold;">Title：</span>Unit
+root,&nbsp; Cointegration and Pairs Trading <br>
+
+
+            <br>
+
+
+          </li>
+
+
+          <li><span style="font-weight: bold;">Talk
+3:</span> <br>
+
+
+            <span style="font-weight: bold;">Place：</span>4/13
+(五) 下午3:00 <br>
+
+
+            <span style="font-weight: bold;">Time：</span>中
+研院統計所308室 <br>
+
+
+            <span style="font-weight: bold;">Speaker：</span>韓
+傳祥 教授(清華大學計量財務金融學系) <br>
+
+
+            <span style="font-weight: bold;">Title：</span>Toward
+a Unified Formulation of Derivatives Pricing, Hedging, and
+Transaction Cost under Incomplete Market Models <br>
+
+
+            <br>
+
+
+          </li>
+
+
+          <li><span style="font-weight: bold;">No
+Talk on 4/27.</span> <br>
+
+
+            <br>
+
+
+          </li>
+
+
+          <li><span style="font-weight: bold;">Talk
+4:</span> <br>
+
+
+            <span style="font-weight: bold;">Place：</span>5/11
+(五) 下午3:00 <br>
+
+
+            <span style="font-weight: bold;">Time：</span>中
+研院統計所308室 <br>
+
+
+            <span style="font-weight: bold;">Speaker：</span>
+邱俊淵 (台大資工所)<br>
+
+
+            <span style="font-weight: bold;">Title：</span><i><a href="Paper/Price%20an%20Asian%20option%20by%20PDE%20approach.ppt"><strong>Price
+an Asian option by PDE approach</strong></a></i><br>
+
+
+            <br>
+
+
+          </li>
+
+
+          <li><span style="font-weight: bold;">Talk
+5:</span> <br>
+
+
+            <span style="font-weight: bold;">Place：</span>6/1
+(五) 下午3:00 <br>
+
+
+            <span style="font-weight: bold;">Time：</span>中
+研院統計所308室 <br>
+
+
+            <span style="font-weight: bold;">Speaker：</span>
+張國平 教授 (清華大學計量財務金融學系)<br>
+
+
+            <span style="font-weight: bold;">Title：</span>Are
+Securities also Derivatives? <br>
+
+
+            <br>
+
+
+          </li>
+
+
+          <li><span style="font-weight: bold;">Talk
+6:</span> <br>
+
+
+            <span style="font-weight: bold;">Place：</span>6/29
+(五) 下午3:00 <br>
+
+
+            <span style="font-weight: bold;">Time：</span>中
+研院統計所308室 <br>
+
+
+            <span style="font-weight: bold;">Speaker：</span>
+顏汝芳(台大財金所)<br>
+
+
+            <span style="font-weight: bold;">Title：</span><a href="Paper/%C3C%A6%BC%AA%DA.ppt">Pricing
+Discrete Lookback Options Under A Jump-Diffusion Model</a> <br>
+
+
+            <br>
+
+
+          </li>
+
+
+          <li><span style="font-weight: bold;">Talk
+7:</span> <br>
+
+
+            <span style="font-weight: bold;">Place：</span>8/24
+(五) 上午10:30 <br>
+
+
+            <span style="font-weight: bold;">Time：</span>中
+研院統計所308室 <br>
+
+
+            <span style="font-weight: bold;">Speaker：</span>
+鍾惠民教授 （交通大學財務金融研究所）<br>
+
+
+            <span style="font-weight: bold;">Title：</span><strong><i><a href="Paper/1_0824_Pricing%20Efficiency.ppt"><strong>Decimalization
+and the ETFs and Futures Pricing Efficiency</strong></a></i></strong><br>
+
+
+            <br>
+
+
+          </li>
+
+
+        
+        </ul>
+
+
+        <li><font color="red" face="Times New Roman,Georgia,Times" size="5">Fall
+2006</font></li>
+
+
+        
+        <ul>
+
+
+          <li><span style="font-weight: bold;">Talk
+1:</span> <br>
+
+
+            <span style="font-weight: bold;">Place：</span>9/15
+(五) 下午3:00 <br>
+
+
+            <span style="font-weight: bold;">Time：</span>中
+研院統計所308室 <br>
+
+
+            <span style="font-weight: bold;">Speaker：</span>
+戴天時教授 （交大資財）<br>
+
+
+            <span style="font-weight: bold;">Title：</span><i><a href="Paper/JFM950822.pdf"><strong>The
+Bino-trinomial Tree：a single model for efficient and Accurate Option
+Pricing</strong></a><strong></strong><a href="Paper/portreview.pdf"><strong>.</strong></a></i><br>
+
+
+            <br>
+
+
+          </li>
+
+
+          <li><span style="font-weight: bold;">Talk
+2:</span> <br>
+
+
+            <span style="font-weight: bold;">Place：</span>9/29
+(五) 下午3:00 <br>
+
+
+            <span style="font-weight: bold;">Time：</span>中
+研院統計所308室 <br>
+
+
+            <span style="font-weight: bold;">Speaker：</span>
+韓傳祥 教授(清華大學計量財務金融學系)<br>
+
+
+            <span style="font-weight: bold;">Title：</span><a href="Paper/AS_Stat06.pdf">Option
+pricing, hedging, and efficient Monte Carlo methods.</a> <br>
+
+
+            <br>
+
+
+          </li>
+
+
+          <li><span style="font-weight: bold;">Talk
+3:</span> <br>
+
+
+            <span style="font-weight: bold;">Place：</span>10/13
+(五) 下午3:00 <br>
+
+
+            <span style="font-weight: bold;">Time：</span>中
+研院統計所308室 <br>
+
+
+            <span style="font-weight: bold;">Speaker：</span>
+王仁和 (台大財金所)<br>
+
+
+            <span style="font-weight: bold;">Title：</span><a href="Paper/ParticleFilter%28beamer%29.pdf">The
+role of new information data: estimation problem for the
+state space model.</a> <br>
+
+
+            <br>
+
+
+          </li>
+
+
+          <li><span style="font-weight: bold;">Talk
+4:</span> <br>
+
+
+            <span style="font-weight: bold;">Place：</span>10/27
+(五) 下午3:00 <br>
+
+
+            <span style="font-weight: bold;">Time：</span>中
+研院統計所308室 <br>
+
+
+            <span style="font-weight: bold;">Speaker：</span>陳
+琪龍 教授(銘傳大學財務金融系) <br>
+
+
+            <span style="font-weight: bold;">Title：</span><a href="Paper/portreview.pdf">Portfolio
+choice problems</a> <br>
+
+
+            <br>
+
+
+          </li>
+
+
+          <li><span style="font-weight: bold;">Talk
+5:</span> <br>
+
+
+            <span style="font-weight: bold;">Place：</span>12/8
+(五) 下午3:00 <br>
+
+
+            <span style="font-weight: bold;">Time：</span>中
+研院統計所308室 <br>
+
+
+            <span style="font-weight: bold;">Speaker：</span>陳
+麗君 (台大財金所) <br>
+
+
+            <span style="font-weight: bold;">Title：</span><a href="Paper/061208PPT.ppt">發
+行公司的違約風險對員工認股權價值的影響</a> <br>
+
+
+            <br>
+
+
+          </li>
+
+
+          <li><span style="font-weight: bold;">Talk
+6:</span> <br>
+
+
+            <span style="font-weight: bold;">Place：</span>01/05/2007
+(五) 下午3:00 <br>
+
+
+            <span style="font-weight: bold;">Time：</span>中
+研院統計所308室 <br>
+
+
+            <span style="font-weight: bold;">Speaker： </span>王
+仁和 (台大財金所)<br>
+
+
+            <span style="font-weight: bold;">Title：</span><a href="Paper/paper_var_nonlinear%28beamer%29.pdf">Risk
+management for linear and nonlinear asset - a bootstrp
+method with importance sampling to evaluate Value at Risk.</a> </li>
+
+
+        
+        </ul>
+
+
+      
+      </ul>
+
+
+      
+      <hr> <a href="../main.htm"><img src="../images/logo.gif" align="right" border="0" hspace="6" width="100"></a>
+      
+      <p align="right">
+      
+      <script>
+document.write("<font size=-2>Updated " +document.lastModified+ "</font>")
+      </script></p>
+
+
+      </td>
+
+
+    </tr>
+
+
+  
+  </tbody>
+</table>
+
+
+</center>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5547275-1");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>
