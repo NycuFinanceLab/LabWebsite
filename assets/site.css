@@ -256,6 +256,31 @@ h3 {
   font-size: 18px;
 }
 
+.lab-intro {
+  display: grid;
+  gap: 18px;
+  color: #344149;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.lab-intro h2 {
+  margin-bottom: 0;
+  color: var(--ink);
+  font-size: 24px;
+}
+
+.lab-intro p {
+  margin-bottom: 0;
+}
+
+.lab-intro ul {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding-left: 18px;
+}
+
 .profile-summary > h2 {
   margin-bottom: 12px;
 }
