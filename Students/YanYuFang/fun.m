@@ -1,4 +1,4 @@
-function error=fun(asigma,zero_rate,forward_rate,strike,k,vol)       % ¦¹µ{¦¡¬°asigmatestªº°Æµ{¦¡  »İ­n¥Î¨ìblack°Æµ{¦¡
+function error=fun(asigma,zero_rate,forward_rate,strike,k,vol)       % æ­¤ç¨‹å¼ç‚ºasigmatestçš„å‰¯ç¨‹å¼  éœ€è¦ç”¨åˆ°blackå‰¯ç¨‹å¼
 
 B_cap(1:7,1)=zeros(7,1);
 for i=1:39                                                           % use Black equation to price cap 

@@ -1,5 +1,5 @@
-clear all; clc      % ¦¹µ{¦¡¥Î¨Ó®Õ¥¿H-Wªºa©Msigma  ¥ÎÀ¹·O¾Ç©jªº¤è¦¡
-                    % §âÀ¹·O¾Ç©nªºC++µ{¦¡¼g¦¨matlab
+clear all; clc      % æ­¤ç¨‹å¼ç”¨ä¾†æ ¡æ­£H-Wçš„aå’Œsigma  ç”¨æˆ´æ…ˆå­¸å§çš„æ–¹å¼
+                    % æŠŠæˆ´æ…ˆå­¸å§Šçš„C++ç¨‹å¼å¯«æˆmatlab
 DATA = xlsread('data');
 vol=DATA(:,1);
 zero_rate=DATA(:,2);

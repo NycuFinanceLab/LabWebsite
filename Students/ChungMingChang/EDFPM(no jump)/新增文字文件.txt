@@ -1,4 +1,4 @@
-±N¹H¬ùªùÂe©w¸q¬°¥~¥Íªº©T©w±`¼Æ¡A¥iµø¬°¹ï©ó¶ÅÅv¤Hªº«OÅ@±ø´Ú(Black and Cox (1976) and Longstaff and Schwartz (1995))¡FªÑªF¸Õ¹Ï¨M©w¤@­Ó¹H¬ùªùÂe¨Ï±o¤½¥q»ù­È³Ì¤j¡A©Ò¥H¹H¬ùªùÂe¤]¥i¥H¬°¤º¥Í©T©w±`¼Æ(cf. Leland 1994 and Leland and Toft 1996.)¡C
-  µ²ºc¦¡¼Ò«¬¦b¤åÄm¤W¦³¦Ò¼{±`¼Æ§Q²v(Black and Cox 1976, Geske 1977, Leland 1994 and Leland and Toft 1996)¡A¥H¤ÎÀH¾÷(stochastic processes)§Q²v³¡¤À(Ronn and Verma 1986, Kim, Ramaswamy and Sundaresan 1993,Nielsen et al. 1993, Longstaff and Schwartz 1995, Briys and de Varenne 1997 andHsu, Saa-Requejo and Santa-Clara 2004)¡C
-  ¥H¤U©w¸qªº¼Æ¾Ç²Å¸¹¡A¬Ò°²³]¦bµL®M§Qªº¥«³õ¤U¡A¥H­·ÀI¤¤¥ß¾÷²v´ú«×­pºâ¡C±Ä¥Î¬Y­Óµu§Q¼Ò«¬ªí¥ÜµL­·ÀI§Q²v(default-free)  ¡C
+å°‡é•ç´„é–€æª»å®šç¾©ç‚ºå¤–ç”Ÿçš„å›ºå®šå¸¸æ•¸ï¼Œå¯è¦–ç‚ºå°æ–¼å‚µæ¬Šäººçš„ä¿è­·æ¢æ¬¾(Black and Cox (1976) and Longstaff and Schwartz (1995))ï¼›è‚¡æ±è©¦åœ–æ±ºå®šä¸€å€‹é•ç´„é–€æª»ä½¿å¾—å…¬å¸åƒ¹å€¼æœ€å¤§ï¼Œæ‰€ä»¥é•ç´„é–€æª»ä¹Ÿå¯ä»¥ç‚ºå…§ç”Ÿå›ºå®šå¸¸æ•¸(cf. Leland 1994 and Leland and Toft 1996.)ã€‚
+  çµæ§‹å¼æ¨¡å‹åœ¨æ–‡ç»ä¸Šæœ‰è€ƒæ…®å¸¸æ•¸åˆ©ç‡(Black and Cox 1976, Geske 1977, Leland 1994 and Leland and Toft 1996)ï¼Œä»¥åŠéš¨æ©Ÿ(stochastic processes)åˆ©ç‡éƒ¨åˆ†(Ronn and Verma 1986, Kim, Ramaswamy and Sundaresan 1993,Nielsen et al. 1993, Longstaff and Schwartz 1995, Briys and de Varenne 1997 andHsu, Saa-Requejo and Santa-Clara 2004)ã€‚
+  ä»¥ä¸‹å®šç¾©çš„æ•¸å­¸ç¬¦è™Ÿï¼Œçš†å‡è¨­åœ¨ç„¡å¥—åˆ©çš„å¸‚å ´ä¸‹ï¼Œä»¥é¢¨éšªä¸­ç«‹æ©Ÿç‡æ¸¬åº¦è¨ˆç®—ã€‚æ¡ç”¨æŸå€‹çŸ­åˆ©æ¨¡å‹è¡¨ç¤ºç„¡é¢¨éšªåˆ©ç‡(default-free)  ã€‚
 

@@ -4,10 +4,10 @@ clear all
 format long
 clear f
 
-Tn = 10;                       %´Á¼Æ ie. 0,1,2,3
+Tn = 10;                       %æœŸæ•¸ ie. 0,1,2,3
 ni = 2;               
 N = 0;                         %N0=0                
-sigma = 0.1;                   %¥ı°²³]¨C´Ásigma¤£ÅÜ
+sigma = 0.1;                   %å…ˆå‡è¨­æ¯æœŸsigmaä¸è®Š
 delta = 1;
 K = 0.05;
 f0 = [0.05 ; 0.05; 0.05; 0.05; 0.05; 0.05; 0.05; 0.05; 0.05; 0.05; 0.05];    %f(i,Ti)  [f00 ; f01 ; f02....]
@@ -31,7 +31,7 @@ for k=Tn:-1:1
     end
   
 %     tempory = f(:,:,k);
-%     save( ['C:\headoil\f' num2str(k) '.txt'] , 'tempory' , '-ascii', '-double')  %¦sÀÉ°İÃD«İ¸Ñ¨M
+%     save( ['C:\headoil\f' num2str(k) '.txt'] , 'tempory' , '-ascii', '-double')  %å­˜æª”å•é¡Œå¾…è§£æ±º
 end
 
 f
@@ -136,7 +136,7 @@ if(ni==1)
 
 
 
-    %%¼Æ­ÈP
+    %%æ•¸å€¼P
     for i=1:Tn+1
         if (i==1)
             numerical_p1(i,1) = 1/(1+f0(1));
@@ -206,7 +206,7 @@ end
 if (ni~=1)
     N = 0;
     d = 2/(1+exp(2*sigma*((delta)/ni)^0.5));
-    u = 2-d;                                     %¦]¬°°²³]Ãö«Y  ¨C´Áu.d¬°¬Û¦P
+    u = 2-d;                                     %å› ç‚ºå‡è¨­é—œä¿‚  æ¯æœŸu.dç‚ºç›¸åŒ
     pathq(1:1+ni*Tn,Tn+1) = 0;
     pathq(1,1) = 1;
     

@@ -1,4 +1,4 @@
-// test.cpp : ©w¸q¥D±±¥xÀ³¥Îµ{¦¡ªº¶i¤JÂI¡C
+// test.cpp : å®šç¾©ä¸»æ§å°æ‡‰ç”¨ç¨‹å¼çš„é€²å…¥é»ã€‚
 //
 
 #include "stdafx.h"
@@ -57,11 +57,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	double discount_factor = exp(-r*dt);
 
 		
-	// n = 42000 µª®×¬O 3.48425, ¦A¤jªº n µ{¦¡´N·|¥X²{¨Ò¥~
-	// n = 1000 µª®×¬O 3.48373
-	////////////////////////// Àu¤Æª© + Ãi¤H proxy //////////////////////////
+	// n = 42000 ç­”æ¡ˆæ˜¯ 3.48425, å†å¤§çš„ n ç¨‹å¼å°±æœƒå‡ºç¾ä¾‹å¤–
+	// n = 1000 ç­”æ¡ˆæ˜¯ 3.48373
+	////////////////////////// å„ªåŒ–ç‰ˆ + æ‡¶äºº proxy //////////////////////////
 	/*
-	ftime(&start); // ­p®É¶}©l
+	ftime(&start); // è¨ˆæ™‚é–‹å§‹
 
 
 	tmp[0] = s0*pow(u, n-1);
@@ -90,7 +90,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << c[0] << endl;	
 	
 
-	ftime(&end); // ­p®Éµ²§ô
+	ftime(&end); // è¨ˆæ™‚çµæŸ
 	if(start.millitm > end.millitm)
 		times = (end.time-start.time-1)+(1000.0+end.millitm-start.millitm)/1000;
 	else
@@ -98,8 +98,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << times << endl;
 	*/
 	/*
-	////////////////////////// ¦nÅªª© + Ãi¤H proxy //////////////////////////
-	ftime(&start); // ­p®É¶}©l
+	////////////////////////// å¥½è®€ç‰ˆ + æ‡¶äºº proxy //////////////////////////
+	ftime(&start); // è¨ˆæ™‚é–‹å§‹
 
 
 	for(int i=0 ; i<=n-1 ; i++){	
@@ -109,7 +109,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	
 	for(int i=n-2 ; i>=0 ; i--){
-		for(int j=0 ; j<=i+1 ; j++)	// ¤p¤ß¡I¦b´î proxy ªº®É­Ô°}¦Cªø«×ÁÙ¬O i+1 ªº
+		for(int j=0 ; j<=i+1 ; j++)	// å°å¿ƒï¼åœ¨æ¸› proxy çš„æ™‚å€™é™£åˆ—é•·åº¦é‚„æ˜¯ i+1 çš„
 			c[j] = c[j] - proxy[j];
 		for(int j=0 ; j<=i ; j++){
 			tmp[j] = exp(-r*dt)*(p*c[j] + (1-p)*c[j+1]);
@@ -126,7 +126,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << c[0] << endl;
 	
 
-	ftime(&end); // ­p®Éµ²§ô
+	ftime(&end); // è¨ˆæ™‚çµæŸ
 	if(start.millitm > end.millitm)
 		times = (end.time-start.time-1)+(1000.0+end.millitm-start.millitm)/1000;
 	else
@@ -134,8 +134,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << times << endl;
 	
 	*/
-	////////////////////////// Àu¤Æª©µL proxy //////////////////////////
-	ftime(&start); // ­p®É¶}©l
+	////////////////////////// å„ªåŒ–ç‰ˆç„¡ proxy //////////////////////////
+	ftime(&start); // è¨ˆæ™‚é–‹å§‹
 
 	tmp[0] = s0*pow(u, n);
 	for(int i=1 ; i<=n ; i++)
@@ -155,7 +155,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	cout << c[0] << endl;	
 	
-	ftime(&end); // ­p®Éµ²§ô
+	ftime(&end); // è¨ˆæ™‚çµæŸ
 	if(start.millitm > end.millitm)
 		times = (end.time-start.time-1)+(1000.0+end.millitm-start.millitm)/1000;
 	else
@@ -163,10 +163,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << times << endl;
 	
 	/*
-	////////////////////////// ¦nÅªª©µL proxy //////////////////////////
-	ftime(&start); // ­p®É¶}©l
+	////////////////////////// å¥½è®€ç‰ˆç„¡ proxy //////////////////////////
+	ftime(&start); // è¨ˆæ™‚é–‹å§‹
 
-	for(int i=0 ; i<=n ; i++)		// µ¹³Ì«á¤@´Áªº c ­È
+	for(int i=0 ; i<=n ; i++)		// çµ¦æœ€å¾Œä¸€æœŸçš„ c å€¼
 		c[i] = (K-s0*pow(u, n-i)*pow(d, i) > 0) ? (K-s0*pow(u, n-i)*pow(d, i)) : 0;
 	
 	
@@ -179,7 +179,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	cout << c[0] << endl;
 	
-	ftime(&end); // ­p®Éµ²§ô
+	ftime(&end); // è¨ˆæ™‚çµæŸ
 	if(start.millitm > end.millitm)
 		times = (end.time-start.time-1)+(1000.0+end.millitm-start.millitm)/1000;
 	else

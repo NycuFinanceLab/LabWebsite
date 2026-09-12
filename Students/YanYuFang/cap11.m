@@ -1,23 +1,23 @@
-%%%%%%%%%%%%%%%%%%%%%%%% µû»ù¤T­Ó¤ëCap %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% è©•åƒ¹ä¸‰å€‹æœˆCap %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear all;               
-clc;            % a©Msigma¬°¥Ñasigmatest¶]¥Xªº­È ¥­¤è©M¶}®Ú¸¹»~®t¬°0.00058374 
+clc;            % aå’Œsigmaç‚ºç”±asigmatestè·‘å‡ºçš„å€¼ å¹³æ–¹å’Œé–‹æ ¹è™Ÿèª¤å·®ç‚º0.00058374 
 tic
 DATA = xlsread('ZERO_RATE_3M');         
-tenor=0.25;  b=7; n=1; K=0.0277;      % b¬°branch­Ó¼Æ, n¬°´Á¼Æ, K¬°§Q²v¤W­­
+tenor=0.25;  b=7; n=1; K=0.0277;      % bç‚ºbranchå€‹æ•¸, nç‚ºæœŸæ•¸, Kç‚ºåˆ©ç‡ä¸Šé™
 a=0.011072;  sigma=0.0046369;
 u=(b-1)/2;
-h(1:n+1)=10*sigma*sqrt(tenor)/(b-1);  % §Q²v¶¡¹j°ª«×
+h(1:n+1)=10*sigma*sqrt(tenor)/(b-1);  % åˆ©ç‡é–“éš”é«˜åº¦
 zero_rate=DATA(:,1);
 alpha(1)=zero_rate(1); 
-for i=1:n                             % ¾÷²v
+for i=1:n                             % æ©Ÿç‡
       for ll=1:b                                                                                           
           p(i,b*(i-1)*u+ll)=normcdf(((1/b-(2/b)*((b-1)/2)+(2/b)*(ll-1))*5*sigma*sqrt(tenor)-0)/(sigma*tenor^(1/2))) ...
                -normcdf(((1/b-(2/b)*((b-1)/2)+(2/b)*((ll-1)-1))*5*sigma*sqrt(tenor)-0)/(sigma*tenor^(1/2)));
       end
 end
  
-Q(1:n+1,1:b*n-(n-1))=zeros(1:n+1,1:b*n-(n-1));      % Qªì©l­È0 ,Q:the value of paying $1 at node (i, j)
+Q(1:n+1,1:b*n-(n-1))=zeros(1:n+1,1:b*n-(n-1));      % Qåˆå§‹å€¼0 ,Q:the value of paying $1 at node (i, j)
 AA(1,1:n+1)=zeros(1,n+1);
 Q(1,1)=1; 
     for j=1:b                                       % when i=2
@@ -27,8 +27,8 @@ Q(1,1)=1;
     alpha(2)=(log(AA(2))+zero_rate(2)*2*tenor)/tenor;              
 
 for i=2:n+1
-    nn(i)=(abs(K-alpha(i))-mod(abs(K-alpha(i)),h(i)))/h(i)+1;     % ¤W°ª´µ
-    h(i)=(abs(K-alpha(i)))/nn(i);                          % ½Õ¾ã¶¡¹j°ª«×
+    nn(i)=(abs(K-alpha(i))-mod(abs(K-alpha(i)),h(i)))/h(i)+1;     % ä¸Šé«˜æ–¯
+    h(i)=(abs(K-alpha(i)))/nn(i);                          % èª¿æ•´é–“éš”é«˜åº¦
 end
 
 for i=1:n  
@@ -49,13 +49,13 @@ Q(1,1)=1;
 
 
     r(1,1)=zero_rate(1);      
-    for i=2:n+1                                             % «Ø³y§Q²v¾ğ¯x°}
+    for i=2:n+1                                             % å»ºé€ åˆ©ç‡æ¨¹çŸ©é™£
         for j=1:b*(i-1)-(i-2)
 		    r(i,j)=alpha(i)+( (b*(i-1)-(i-2)-1)/2-(j-1) )*h(i);
         end	
     end
-    for j=1:b*n-(n-1)                       % valueªì©l­È 0 ,¥Î¨Ó¦s©ñ§é²{ªº­È
-        value(n+1,j)=max(r(n+1,j)-K,0);                 % cap³Ì«á¤@´Ápayoff
+    for j=1:b*n-(n-1)                       % valueåˆå§‹å€¼ 0 ,ç”¨ä¾†å­˜æ”¾æŠ˜ç¾çš„å€¼
+        value(n+1,j)=max(r(n+1,j)-K,0);                 % capæœ€å¾Œä¸€æœŸpayoff
         for i=1:n 
 		    value(i,j)=0;                                            	
         end
@@ -71,6 +71,6 @@ Q(1,1)=1;
         end
     end
 
-value(1,1)                       % ´Áªì»ù®æ
+value(1,1)                       % æœŸåˆåƒ¹æ ¼
 
 toc

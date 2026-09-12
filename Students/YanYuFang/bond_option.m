@@ -1,7 +1,7 @@
-%%%%%%%%%%%%%%%%%%%%% µû»ù bond option %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% è©•åƒ¹ bond option %%%%%%%%%%%%%%%%%%%%%%%
 
 clear all;           
-clc;            % a©Msigma¬°¥Ñasigmatest¶]¥Xªº­È ¥­¤è©M¶}®Ú¸¹»~®t¬°0.00058374 
+clc;            % aå’Œsigmaç‚ºç”±asigmatestè·‘å‡ºçš„å€¼ å¹³æ–¹å’Œé–‹æ ¹è™Ÿèª¤å·®ç‚º0.00058374 
 tic
 DATA = xlsread('ZERO_RATE_3M');
  tenor=0.25;  b=29; n=12; K=0.96;   option_date=9;             
@@ -36,7 +36,7 @@ for i=1:n
           mmm=mmm-1;
       end
   end
-Q(1:n+1,1:b*n-(n-1))=zeros(1:n+1,1:b*n-(n-1));              % Qªì©l­È 0 ,Q:the value of paying $1 at node (i, j)
+Q(1:n+1,1:b*n-(n-1))=zeros(1:n+1,1:b*n-(n-1));              % Qåˆå§‹å€¼ 0 ,Q:the value of paying $1 at node (i, j)
 AA(1,1:n+1)=zeros(1,n+1);
 Q(1,1)=1; 
     for j=1:b                                               % when i=2
@@ -85,13 +85,13 @@ for i=3:n+1
 end
 
     r(1,1)=zero_rate(1);      
-    for i=2:n+1                                             % «Ø³y§Q²v¾ğ¯x°}
+    for i=2:n+1                                             % å»ºé€ åˆ©ç‡æ¨¹çŸ©é™£
         for j=1:b*(i-1)-(i-2)
 		    r(i,j)=alpha(i)+( (b*(i-1)-(i-2)-1)/2-(j-1) )*h(i);
         end	
     end
-    for j=1:b*n-(n-1)                                       % valueªì©l­È 0 ,¥Î¨Ó¦s©ñ§é²{ªº­È
-        value(n+1,j)=1+c;                                   % bond option ³Ì«á¤@´Ápayoff
+    for j=1:b*n-(n-1)                                       % valueåˆå§‹å€¼ 0 ,ç”¨ä¾†å­˜æ”¾æŠ˜ç¾çš„å€¼
+        value(n+1,j)=1+c;                                   % bond option æœ€å¾Œä¸€æœŸpayoff
         value(n,j)=(1+c)*exp(-r(n,j)*tenor);                % coupon           
         for i=1:n-1  
 		    value(i,j)=0;                                            	
@@ -107,7 +107,7 @@ end
             end
         end
     end
-%%%%%%%%%%%%%%%%%%%%%%%% µ¹©wK¥i±oª¾RK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%% çµ¦å®šKå¯å¾—çŸ¥RK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
     for j=1:120
         if (K>=value(9,j) && K<value(9,j+1)) 
             RK=r(9,j);
@@ -123,14 +123,14 @@ end
 E=0;
 while( abs(K-B)>0.00001 && abs(K-C) >0.00001 && abs(K-A) >0.00001 && abs(K-D) >0.00001)% && abs(K-G) >0.00001
     RK=RK-E*0.0000000001
-    nn(9)=(abs(RK-alpha(9))-mod(abs(RK-alpha(9)),h(9)))/h(9)+1;              % ¤W°ª´µ
-    h(9)=(abs(RK-alpha(9)))/nn(9);                                       % ½Õ¤@´Á
+    nn(9)=(abs(RK-alpha(9))-mod(abs(RK-alpha(9)),h(9)))/h(9)+1;              % ä¸Šé«˜æ–¯
+    h(9)=(abs(RK-alpha(9)))/nn(9);                                       % èª¿ä¸€æœŸ
                                                     
     for j=1:b*(9-1)-(9-2)                                       % i=9
 	    r(9,j)=alpha(9)+( (b*(9-1)-(9-2)-1)/2-(j-1) )*h(9);
     end	
-     for j=1:b*n-(n-1)                                       % valueªì©l­È 0 ,¥Î¨Ó¦s©ñ§é²{ªº­È
-        value(n+1,j)=1+c;                                   % bond option ³Ì«á¤@´Ápayoff
+     for j=1:b*n-(n-1)                                       % valueåˆå§‹å€¼ 0 ,ç”¨ä¾†å­˜æ”¾æŠ˜ç¾çš„å€¼
+        value(n+1,j)=1+c;                                   % bond option æœ€å¾Œä¸€æœŸpayoff
         value(n,j)=(1+c)*exp(-r(n,j)*tenor);                % coupon           
         for i=1:n-1  
 		    value(i,j)=0;                                            	

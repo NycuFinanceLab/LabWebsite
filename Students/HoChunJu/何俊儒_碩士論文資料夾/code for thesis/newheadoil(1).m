@@ -4,10 +4,10 @@ clear all
 format long
 clear f
 
-Tn = 10;                       %´Á¼Æ ie. 0,1,2,3
+Tn = 10;                       %æœŸæ•¸ ie. 0,1,2,3
 ni = 1;               
 N = 0;                        %N0=0                
-sigma = 0.3;                  %¥ı°²³]¨C´Ásigma¤£ÅÜ
+sigma = 0.3;                  %å…ˆå‡è¨­æ¯æœŸsigmaä¸è®Š
 delta = 1;
 K = 0.05;
 f0 = [0.05 ; 0.05 ; 0.05  ; 0.05  ; 0.05  ; 0.05  ; 0.05  ; 0.05  ; 0.05  ; 0.05  ; 0.05  ]   %f(i,Ti)  [f00 ; f01 ; f02....]
@@ -25,7 +25,7 @@ for k=Tn:-1:1
     end
     f(:,:,k) = f(:,:,k)*100;
     tempory = f(:,:,k);
-%     save( ['C:\headoil\f' num2str(k) '.txt'] , 'tempory' , '-ascii', '-double')  %¦sÀÉ°İÃD«İ¸Ñ¨M
+%     save( ['C:\headoil\f' num2str(k) '.txt'] , 'tempory' , '-ascii', '-double')  %å­˜æª”å•é¡Œå¾…è§£æ±º
 end
 
 % f
@@ -130,7 +130,7 @@ pathq
 sum(pathq)
 
 
-%%¤Å§R
+%%å‹¿åˆª
 % f1 = f;
 % for i=1:Tn
 %     f1(1:i+1,i+1,i) = 1./((1+f1(1:i+1,i+1,i)).^(delta));
@@ -138,7 +138,7 @@ sum(pathq)
 % 
 % f1
 
-%%¼Æ­ÈBond Price
+%%æ•¸å€¼Bond Price
 for i=1:Tn+1
     if (i==1)
         numerical_p1(i,1) = 1/(1+f0(1));
@@ -162,8 +162,8 @@ for i=1:Tn+1
     end
 end
 
-numerical_p1%³Ì«á¤@´Áªº¶Å¨é»ù®æP(Tn,Tn+1)
-numerical_p2%¹s®§¶Å¨é»ù®æP(0,i)~P(0,Tn)
+numerical_p1%æœ€å¾Œä¸€æœŸçš„å‚µåˆ¸åƒ¹æ ¼P(Tn,Tn+1)
+numerical_p2%é›¶æ¯å‚µåˆ¸åƒ¹æ ¼P(0,i)~P(0,Tn)
 
 %Caplet
 
@@ -177,7 +177,7 @@ end
 
 caplet
 
-%black model(»İ­n§ï¼g¦¨¤½¦¡ªº§Î¦¡)
+%black model(éœ€è¦æ”¹å¯«æˆå…¬å¼çš„å½¢å¼)
 for i=1:Tn
     nd1 = normcdf(0.5*sigma*(i^0.5),0,1);
     tempory3 = 1;
@@ -189,7 +189,7 @@ end
 
 black
 
-%­pºâBlack©MNumerical Capletªº»~®t
+%è¨ˆç®—Blackå’ŒNumerical Capletçš„èª¤å·®
 difference = caplet - black
 
 RMSE = sqrt((sum(difference.^2)) / Tn)

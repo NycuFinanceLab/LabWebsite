@@ -4,8 +4,8 @@
 
 #include <iostream>
 #include <cstdlib>
-#include <cmath>   //•Œsin°Bcos
-#include <complex>    //•Œcomplex
+#include <cmath>   //Áî®sin„ÄÅcos
+#include <complex>    //Áî®complex
 
 using namespace std;
 
@@ -15,7 +15,7 @@ using namespace std;
 complex<double> * input = new complex<double> [size];   // Global
 
 
-complex<double>* FFT(complex<double> * x , int N){  //Cooley°VTukey FFT algorithm
+complex<double>* FFT(complex<double> * x , int N){  //Cooley‚ÄìTukey FFT algorithm
     complex<double> * X = new complex<double> [size];   // local
     
     if(N == 1){

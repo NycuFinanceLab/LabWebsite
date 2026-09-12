@@ -1,5 +1,5 @@
-clear all;   % ���{���ΨӮե�H-W��a�Msigma  �γ̤p���褺��  ���G��ǩn���覡�n
-clc;         % �Ƶ{�� fun
+clear all;   % 此程式用來校正H-W的a和sigma  用最小平方內建  結果比學姊的方式好
+clc;         % 副程式 fun
 tic
 DATA = xlsread('data');
 vol=DATA(:,1);

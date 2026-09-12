@@ -1,7 +1,7 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% µû»ù¤T¦~Cap %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% è©•åƒ¹ä¸‰å¹´Cap %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear all;               
-clc;            % a©Msigma¬°¥Ñasigmatest¶]¥Xªº­È ¥­¤è©M¶}®Ú¸¹»~®t¬°0.00058374 
+clc;            % aå’Œsigmaç‚ºç”±asigmatestè·‘å‡ºçš„å€¼ å¹³æ–¹å’Œé–‹æ ¹è™Ÿèª¤å·®ç‚º0.00058374 
 tic
 DATA = xlsread('ZERO_RATE_3M');
 tenor=0.25;  b=7; n=12; K=0.0277;
@@ -31,7 +31,7 @@ for i=1:n
           mmm=mmm-1;
       end
   end
-Q(1:n+1,1:b*n-(n-1))=zeros(1:n+1,1:b*n-(n-1));                            % Qªì©l­È 0 ,Q:the value of paying $1 at node (i, j)
+Q(1:n+1,1:b*n-(n-1))=zeros(1:n+1,1:b*n-(n-1));                            % Qåˆå§‹å€¼ 0 ,Q:the value of paying $1 at node (i, j)
 AA(1,1:n+1)=zeros(1,n+1);
 Q(1,1)=1; 
     for j=1:b                                                             % when i=2
@@ -80,7 +80,7 @@ for i=3:n+1
 end
 
 for i=2:n+1
-    nn(i)=(abs(K-alpha(i))-mod(abs(K-alpha(i)),h(i)))/h(i)+1;                     % ¤W°ª´µ
+    nn(i)=(abs(K-alpha(i))-mod(abs(K-alpha(i)),h(i)))/h(i)+1;                     % ä¸Šé«˜æ–¯
     h(i)=(abs(K-alpha(i)))/nn(i);
 end
 
@@ -110,7 +110,7 @@ for i=1:n
           mmm=mmm-1;
       end
   end
-Q(1:n+1,1:b*n-(n-1))=zeros(1:n+1,1:b*n-(n-1));                            % Qªì©l­È 0 ,Q:the value of paying $1 at node (i, j)
+Q(1:n+1,1:b*n-(n-1))=zeros(1:n+1,1:b*n-(n-1));                            % Qåˆå§‹å€¼ 0 ,Q:the value of paying $1 at node (i, j)
 AA(1,1:n+1)=zeros(1,n+1);
 Q(1,1)=1; 
     for j=1:b                                                             % when i=2

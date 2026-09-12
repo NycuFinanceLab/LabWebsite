@@ -13,7 +13,7 @@ double zerocouponbond(int ,double** ,int  ,int ,double ,double  );
 double Vasicek(double , double , double , double , double );
 double Credit_Spread(double ,double ,double ,double   );
 
-//«Ø¥ß°ÊºA°}¦C°Æµ{¦¡
+//å»ºç«‹å‹•æ…‹é™£åˆ—å‰¯ç¨‹å¼
 //#define ARRAY_ROW	n+2  
 //#define ARRAY_COL	n+1  
 double **CreateArray(int row, int col)
@@ -26,7 +26,7 @@ double **CreateArray(int row, int col)
 
 	return arr;
 }
-//ÄÀ©ñ°O¾ĞÅé
+//é‡‹æ”¾è¨˜æ†¶é«”
 void FreeArray(double **arr, int row)
 {
 	int i;
@@ -41,11 +41,11 @@ FILE *wf;
 void main()
 
 {
-  int i,jA,jR,n,k;//  n:´Á¼Æ;
-  int jumptime=0; //ÀËµø´Á
-  int    bin_node[4]={0};   //trinode,binode(in jumptime); trinode=binode+2¡FÀËµø´Á»P¨ì´Á¤éT®t2dt
+  int i,jA,jR,n,k;//  n:æœŸæ•¸;
+  int jumptime=0; //æª¢è¦–æœŸ
+  int    bin_node[4]={0};   //trinode,binode(in jumptime); trinode=binode+2ï¼›æª¢è¦–æœŸèˆ‡åˆ°æœŸæ—¥Tå·®2dt
   double dR,dA;
-  //¤½¥q¡A§Q²v°_©l­È¡C
+  //å…¬å¸ï¼Œåˆ©ç‡èµ·å§‹å€¼ã€‚
   double r,S0=800,r0=0.05,T=0.5,a=0.1,b=0.1,sigmaA=0.3,sigmaR=0.035,tho=0.3,dt;//sigmaR-a*sigmaA>0
   double L=400,D=400,error=0.000001,w=0.5,ratio=0.1;   //barrier
   double x=0,ymax,y,Xmax,y0;
@@ -72,11 +72,11 @@ void main()
     dt=T/n; 
 	dA=sigmaA*sqrt(dt);
     dR=sigmaR*sqrt(dt);
-    //¿W¥ßtwo-dimensional Binomial v.s. BTT °_©l­È
+    //ç¨ç«‹two-dimensional Binomial v.s. BTT èµ·å§‹å€¼
 
 	y0=r0/(sigmaR*sqrt(1-tho*tho));
 		  
-	rmax=rmax_rmin(sigmaA,sigmaR,tho,dt,a,b,1); //·í¤Á³Îªø«×«Üªø®É¡A¨M©wªº¤W¤U¬É¨Ï±o¾÷²v«í¥¿
+	rmax=rmax_rmin(sigmaA,sigmaR,tho,dt,a,b,1); //ç•¶åˆ‡å‰²é•·åº¦å¾ˆé•·æ™‚ï¼Œæ±ºå®šçš„ä¸Šä¸‹ç•Œä½¿å¾—æ©Ÿç‡æ†æ­£
 	rmin=rmax_rmin(sigmaA,sigmaR,tho,dt,a,b,2);	
 	bin_node[0]=1;
 	mu_hat=Mu_hat(n,jumptime,bin_node[0],dt,r0,x);
@@ -85,7 +85,7 @@ void main()
 //    Xmax=dA*n;  //two-dimensional Binomial
 //  printf("Xmax:%lf\n",S0*exp(Xmax));
 	
-	//ºâ³Ì«á¤@´Á¸ê²£payoff
+	//ç®—æœ€å¾Œä¸€æœŸè³‡ç”¢payoff
 	for(jA=0;jA<n+2;jA++)    //jA:0~5(n+2)
 	{
 		  for(jR=0;jR<n+1;jR++)  //jR:0~4(n+1)
@@ -111,13 +111,13 @@ void main()
 	}
 	
 	
-	//Backward induction¡F¸IÄ²§Q²v¤W¬É«e(2-dimensional Binomial Lattice)
+	//Backward inductionï¼›ç¢°è§¸åˆ©ç‡ä¸Šç•Œå‰(2-dimensional Binomial Lattice)
 	//Binomial discount
 
 	for(i=n-1;i>=1;i--)
 	{
-	  //mu_hat=Mu_hat(n,jumptime,bin_node[0],dt,r,0); //²Ä¤@´Áªºmu_hat
-		ymax=y0+sqrt(dt)*i;  //¨C¤@´Áy³Ì¤j­È   
+	  //mu_hat=Mu_hat(n,jumptime,bin_node[0],dt,r,0); //ç¬¬ä¸€æœŸçš„mu_hat
+		ymax=y0+sqrt(dt)*i;  //æ¯ä¸€æœŸyæœ€å¤§å€¼   
 		Xmax=mu_hat+2*dA+(i-1)*dA;
 	//	Xmax=dA*i;// Two-dimensional Binomial Lattice 	
     //  printf("t:%d\n",i);
@@ -171,11 +171,11 @@ void main()
 			
 			//	FPM :(Black&Cox)
 							   			  
-	       if((n-i)%2==0) //(³sÄòÀËµø)¨ì´Á¤é¥H¤ÎÀËµø´Á®t2dt
+	       if((n-i)%2==0) //(é€£çºŒæª¢è¦–)åˆ°æœŸæ—¥ä»¥åŠæª¢è¦–æœŸå·®2dt
 			 {	
 				if(S0*exp(x)<=(L+pow(0.1,8)))
 					lnVS[jA][jR]=(1-w)*S0*exp(x);//*(D/L);  
-				//¹ï¶ÅÅv¤H«OÅ@ //discrete: Asset<=B+error //Debt=Asset*(1-B);B=0;µL¯}²£¦¨¥»  
+				//å°å‚µæ¬Šäººä¿è­· //discrete: Asset<=B+error //Debt=Asset*(1-B);B=0;ç„¡ç ´ç”¢æˆæœ¬  
 			 }	
 		        	 
 					 
@@ -194,7 +194,7 @@ void main()
 		if(i==0)
 		{
 			    r=r0;
-				x=0;  //°_©l­È¥Xµo
+				x=0;  //èµ·å§‹å€¼å‡ºç™¼
 				mu_hat=Mu_hat(n,jumptime,bin_node[0],dt,r,x);				
 				tri_probability_(r,P,mu_hat,dt);		//ok!  
 			   
@@ -239,7 +239,7 @@ void main()
 
 	fclose(wf);
 }    
-//­pºâ(jA,jR)¨ì¤U´Áªº¾÷²v°Æµ{¦¡2*2 ; //if  rmin<r<rmax  >>  0<pa,pr<1
+//è¨ˆç®—(jA,jR)åˆ°ä¸‹æœŸçš„æ©Ÿç‡å‰¯ç¨‹å¼2*2 ; //if  rmin<r<rmax  >>  0<pa,pr<1
 
 void probability_(double r,double P[4],double dt )
  {
@@ -251,7 +251,7 @@ void probability_(double r,double P[4],double dt )
 			muA=r-sigmaA*sigmaA/2;
 			muR=a*(b-r);
 		
-		  //§Q²v»P¸ê²£¾÷²v
+		  //åˆ©ç‡èˆ‡è³‡ç”¢æ©Ÿç‡
 
 		  pa=0.5+0.5*muA*sqrt(dt)/sigmaA;
 		  pr=0.5+0.5*sqrt(dt/(1-tho*tho))*(-tho*muA/sigmaA+muR/sigmaR);
@@ -263,7 +263,7 @@ void probability_(double r,double P[4],double dt )
 
 }
 
-//¤T¤¸¼Æ¾÷²v(¥Ñmu_hat¥H¤Î¹ïÀ³ªºmuA­pºâ)
+//ä¸‰å…ƒæ•¸æ©Ÿç‡(ç”±mu_hatä»¥åŠå°æ‡‰çš„muAè¨ˆç®—)
 
 void tri_probability_(double r,double P[6],double mu_hat,double dt)
 {
@@ -299,22 +299,22 @@ void tri_probability_(double r,double P[6],double mu_hat,double dt)
    P[4]=pd*pr;
    P[5]=pd*(1-pr);
 }
-//­pºâmu_hat°Æµ{¦¡(¨ì´Á¤é,jumpµo¥Í®ÉÂI,¤T¤¸¾ğ°_©lÂI­Ó¼Æ)
+//è¨ˆç®—mu_hatå‰¯ç¨‹å¼(åˆ°æœŸæ—¥,jumpç™¼ç”Ÿæ™‚é»,ä¸‰å…ƒæ¨¹èµ·å§‹é»å€‹æ•¸)
 double Mu_hat(int n,int jumptime ,int Binode,double dt,double r,double x)
 {
-  double S0=800,L=400,sigmaA=0.3,standB,mu_hat;  //standB:³Ì¾aªñBarrierªºÂI 
+  double S0=800,L=400,sigmaA=0.3,standB,mu_hat;  //standB:æœ€é è¿‘Barrierçš„é» 
   double muA;		
-  double R_mu_standB;  //mu¨ìstandBªº¶ZÂ÷
-  double RmuB;  //R_mu_standBªº¾ã¼Æ­¿2dA¶¡¹j
+  double R_mu_standB;  //muåˆ°standBçš„è·é›¢
+  double RmuB;  //R_mu_standBçš„æ•´æ•¸å€2dAé–“éš”
   double R,U,error=0.000001;
   int i;
 	
 	U=sigmaA*sqrt(dt);	
 
 	
-  for (i=0; i<Binode+1; i++)  //²Ä i­ÓÀËµø´Á
+  for (i=0; i<Binode+1; i++)  //ç¬¬ iå€‹æª¢è¦–æœŸ
 	{
-		muA=x+(r-0.5*sigmaA*sigmaA)*dt;  //¨C¤@´Áªºmu
+		muA=x+(r-0.5*sigmaA*sigmaA)*dt;  //æ¯ä¸€æœŸçš„mu
 	
 	
 		if(n%2==0)
@@ -324,7 +324,7 @@ double Mu_hat(int n,int jumptime ,int Binode,double dt,double r,double x)
 	  
 		R_mu_standB=(muA-standB)/(2*U);
 		
-		RmuB=(int)floor(R_mu_standB);  // [3.2]>>3 ¸É!
+		RmuB=(int)floor(R_mu_standB);  // [3.2]>>3 è£œ!
 		
 			R=fabs (R_mu_standB-RmuB);
 		
@@ -334,7 +334,7 @@ double Mu_hat(int n,int jumptime ,int Binode,double dt,double r,double x)
 				RmuB=RmuB;
 	}	
 	
-			mu_hat=standB+RmuB*2*U;  //k§ämu_hatªº­Ó¼Æ
+			mu_hat=standB+RmuB*2*U;  //kæ‰¾mu_hatçš„å€‹æ•¸
 
 //	if(fabs(mu_hat-muA)<=U+error)
 			return mu_hat;		
@@ -354,7 +354,7 @@ int Smallest_Integer(double value)
 }
 
  
- //¨M©wr¤W¤U¬Éªº°Æµ{¦¡
+ //æ±ºå®šrä¸Šä¸‹ç•Œçš„å‰¯ç¨‹å¼
  
  double rmax_rmin(double sigmaA ,double sigmaR ,double tho ,double dt,double a,double b,int C  )
  {
@@ -365,26 +365,26 @@ int Smallest_Integer(double value)
 	c=0.5*(sigmaA*sigmaA*sigmaR*tho);
 	d=sigmaA*a*b;
 
-	//­pºârªº¤W¬É
+	//è¨ˆç®—rçš„ä¸Šç•Œ
    if(C==1)
    {
 	   
 	ur1=    (-l-c-d)/(-tho*sigmaR-a*sigmaA);
 	ur2=	sigmaA/sqrt(dt)+0.5*sigmaA*sigmaA;
 	
-    rmax=fabs(Max(-ur1,-ur2));//¨úmin rmax¬°¤W¬É
+    rmax=fabs(Max(-ur1,-ur2));//å–min rmaxç‚ºä¸Šç•Œ
 	
     return rmax; 
 
    }
-   //­pºârªº¤U¬É
+   //è¨ˆç®—rçš„ä¸‹ç•Œ
    else if(C==2)
    {
 	
     lr1=  (l+c+d)/(-tho*sigmaR-a*sigmaA);
 	lr2=  -sigmaA/sqrt(dt)+0.5*sigmaA*sigmaA;
 	
-	rmin=Max(lr1,lr2); //¨úmax rmin¬°¤U¬É
+	rmin=Max(lr1,lr2); //å–max rminç‚ºä¸‹ç•Œ
 		
 	return rmin;
    
@@ -394,7 +394,7 @@ int Smallest_Integer(double value)
      return 0;
  }
 
-//p(0,T)¨ì´Á¤éT¹s®§¶Å¨éªº»ù­È
+//p(0,T)åˆ°æœŸæ—¥Té›¶æ¯å‚µåˆ¸çš„åƒ¹å€¼
 double zerocouponbond(int n,double**p ,int jumptime ,int Binode,double T,double mu_hat  )
 {
 	int jA,jR,i;
@@ -406,7 +406,7 @@ double zerocouponbond(int n,double**p ,int jumptime ,int Binode,double T,double 
 	dt=T/n;
 	dA=sigmaA*sqrt(dt);
 	y0=r0/(sigmaR*sqrt(1-tho*tho));
-	//¨ì´Á¤épayoff=1;
+	//åˆ°æœŸæ—¥payoff=1;
 	for(jA=0;jA<n+2;jA++)    //jA:0~5(n+2)
 	{
 		  for(jR=0;jR<n+1;jR++)  //jR:0~4(n+1)			  
@@ -420,7 +420,7 @@ double zerocouponbond(int n,double**p ,int jumptime ,int Binode,double T,double 
        
 		Xmax=mu_hat+2*dA+(i-1)*dA;
 
-		ymax=y0+sqrt(dt)*i;  //¨C¤@´Áy³Ì¤j­È   
+		ymax=y0+sqrt(dt)*i;  //æ¯ä¸€æœŸyæœ€å¤§å€¼   
 		
 	         /* if(n%2==0) 
 		 			xmax=(log(L/S0)+2*dA*3+(i-2)*dA); 
